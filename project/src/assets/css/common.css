@@ -1,0 +1,102 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+ul li{
+  list-style: none;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+
+}
+.bg_index{
+  background-image: url("../images/comindex/bg_index.jpg");
+  height: 800px;
+}
+.bannerHover{
+ position: fixed;
+  top: 0px;
+  z-index: 200;
+
+}
+/**/
+.el-menu-demo{
+  height: 200px;
+  background: transparent;
+  color: white;
+  padding-top: 50px;
+
+}
+.el-menu--horizontal .el-submenu .el-submenu__title{
+  color: white;
+}
+.el-menu--horizontal .el-submenu .el-submenu__title:hover{
+  background: rgba(255, 255, 255, 0);
+  color: black;
+}
+.el-menu--horizontal{
+  border: none;
+}
+.el-menu--horizontal .el-menu-item{
+  color: white;
+}
+.el-menu--horizontal .el-menu-item:hover{
+  background: rgba(255, 255, 255, 0);
+}
+.el-submenu__title i{
+  color: white;
+}
+.el-menu--horizontal .el-submenu .el-menu-item{
+  color: black;
+  padding-top: 0;
+  background: white;
+}
+.el-menu--horizontal .el-submenu .el-menu-item:hover{
+  background: rgba(227, 227, 227, 0.34);
+}
+.el-menu--horizontal>.el-menu-item.is-active, .el-menu--horizontal>.el-submenu.is-active .el-submenu__title
+{
+  border-bottom: 2px solid #ffffff;
+  color: black;
+}
+.el-menu--horizontal .el-submenu .el-menu-item.is-active{
+  color: #ff7820;
+}
+.el-menu-demo li:nth-of-type(1) img{
+  margin-right:500px;
+}
+/**/
+.logo{
+  top: -19px;
+}
+
+.over,.p1 {
+  position: relative;
+/*  margin:10px auto;*/
+  width: 286px;
+  font-size: 13px;
+  color: #868789;
+  line-height: 17px;
+  text-align: left;
+  overflow: hidden;
+
+}
+.p1:hover{
+  color: black;
+  cursor: pointer;
+}
+
+.news li a{
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 219px;
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+
+
+}
