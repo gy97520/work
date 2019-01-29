@@ -63,18 +63,19 @@ ul li{
 .el-menu--horizontal .el-submenu .el-menu-item.is-active{
   color: #ff7820;
 }
-.el-menu-demo li:nth-of-type(1) img{
-  margin-right:500px;
-}
+
 /**/
 .logo{
-  top: -19px;
+  float: left;
+  margin-right: 500px;
+  margin-left: 10px;
+  margin-top: -32px;
 }
 
 .over,.p1 {
   position: relative;
 /*  margin:10px auto;*/
-  width: 286px;
+  width:340px;
   font-size: 13px;
   color: #868789;
   line-height: 17px;

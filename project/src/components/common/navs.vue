@@ -5,7 +5,7 @@
       class="el-menu-demo"
       mode="horizontal"
     >
-      <el-menu-item index="5" class="logo"><img src="../../assets/images/comindex/logo_white.png"/></el-menu-item>
+      <div class="logo"><img src="../../assets/images/comindex/logo_white.png"/></div>
       <el-submenu index="1" >
         <template slot="title">走进聚而禾</template>
         <el-menu-item :index="'1-'+index"  v-for="(item,index) in oneDetail " :key="index" >{{item.value}}</el-menu-item>
