@@ -24,7 +24,7 @@
           <p>NEWS</p>
           <h3>新闻动态</h3>
           <div style="margin-top: -23px;">_____</div>
-          <br><br><br><br><br><br><br><br>
+          <br><br><br><br><br><br><br>
           <div  style="color: white" @click="that.$jk.getDescribe('/moreNews')">MORE+</div>
           <br><br>
         </div>
@@ -40,6 +40,35 @@
         </div>
       </el-col>
     </el-row>
+    <el-row>
+
+      <el-col style="text-align: center;">
+        <br><br>
+        <h2>业务体系</h2>
+        <p>Business area</p>
+      </el-col>
+    </el-row>
+
+    <el-row :gutter="20">
+
+      <div v-for="(item,index) in lingyu">
+      <el-col :span="3" style="text-align: center;margin-top: 32px; margin-left: 40px">
+        <div style="width:90px;height:90px;border-radius: 45px;background-color:black" @mouseover="enter(index)" :class="{rrred:isChange===index}" @mouseleave="leave()">
+          <div class="bac" style="width: 80px;height: 80px;border-radius: 40px;background-color:white;margin: 0 auto;position: relative; top:5px;font-size: 40px;line-height:80px;"  @mouseover="enter(index)" :class="{rred:isChange===index}" @mouseleave="leave()">
+            <icon :name="item.name_icon" scale="2"></icon>
+          </div>
+        </div>
+      </el-col>
+
+      <el-col :span="4">
+        <h4>{{item.title}}</h4>
+        <p style="font-size: 12px">{{item.Etitle}}</p>
+        <div>{{item.text}}</div>
+      </el-col>
+
+      </div>
+    </el-row>
+
 
   </div>
 
@@ -58,9 +87,27 @@
               {days:'20',years:'2019-1',text:'天津市武清区土地二级市场试点项目顺利通过部级验收'},
               {days:'21',years:'2019-1',text:'文章标题风景园林设计文化的认识和实践体会'},
               {days:'22',years:'2019-2',text:'文章标题风景园林设计文化的认识和实践体会'},
-            ]
+            ],
+           lingyu:[
+              {name_icon:'flag',title:'调查与测绘类业务',Etitle:'Survey and mapping business.',text:'土地勘测定界,农村存量建设用地调查,工业用地调,地籍调查,农村土 地承包经营权调查,林地资源调查......'},
+              {name_icon:'pen',title:'规划类业务',Etitle:'Planning business',text:'农村土地整治规划、土地利用总体规划、 低效用地再开发规划、农村土地再开发规划......'},
+              {name_icon:'globe',title:'评价与评估类业务',Etitle:'Evaluation and evaluation of the business.',text:'城市集约利用评价、开发区士地节约集约利用评价、 城市基准地价评价......'},
+            ],
+            isChange:-1,
+
           }
 
+
+      },
+      methods: {
+
+        enter: function (index) {
+          this.isChange = index;
+
+        },
+        leave: function () {
+          this.isChange = -1;
+        },
 
       },
 
@@ -68,5 +115,13 @@
 </script>
 
 <style scoped>
+  .rred{
+    color: white;
+    background-color: #1fa67a !important;
+  }
+  .rrred{
+
+    background-color:#95ccba !important;
+  }
 
 </style>

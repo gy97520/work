@@ -13,8 +13,8 @@ import 'vue-photo-preview/dist/skin.css'
 import jquery from 'jquery'
 import animated from 'animate.css'
 import '../src/assets/css/common.css'
-
-
+import 'vue-awesome/icons'
+import Icon from 'vue-awesome/components/Icon'
 
 Vue.config.productionTip = false;
 
@@ -23,15 +23,17 @@ Vue.use(ElementUI);
 Vue.use(preview)
 Vue.use(animated)
 
+Vue.component('icon',Icon)
+
 Vue.prototype.$img=img;
 Vue.prototype.$ajax=axios;
-Vue.prototype.$jk=fun;
+/*Vue.prototype.$jk=fun;*/
 Vue.prototype.$http=jquery;
 axios.defaults.baseURL = 'https://mumuwu.com/mmw-official-service';
 axios.defaults.timeout  = 15000;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 /*axios.defaults.baseURL = '/api'*/
-/*Vue.prototype.$herf= {
+Vue.prototype.$jk= {
   getDescribe(router,query) {
     vm.$router.push({
       path:router||'',
@@ -39,8 +41,8 @@ axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded
     })
   },
 
-};*/
-Vue.prototype.$herf={
+};
+/*Vue.prototype.$herf={
   ajax: (url,type,data)=> {
     return axios[type](url, {
       params: data
@@ -63,7 +65,7 @@ Vue.prototype.$herf={
   width:()=>{
     return window.screen.width;
   },
-}
+}*/
 
 /* eslint-disable no-new */
 let vm=new Vue({

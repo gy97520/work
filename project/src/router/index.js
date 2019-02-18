@@ -14,14 +14,15 @@ mode: 'history',
 
     },
 
+
     {
       path: '/',
       component: resolve => require(['@/components/common/static_home'], resolve),
 
       children:[
         {
-          path: '/regist',
-          component: resolve => require(['@/components/regist'], resolve),
+          path: '/moreNews',
+          component: resolve => require(['@/components/moreNews'], resolve),
 
         },
         {
