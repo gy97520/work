@@ -58,11 +58,36 @@ mode: 'history',
     {
       path: '/oneHeader',
       component: resolve => require(['@/components/common/oneHeader'], resolve),
+      children:[
 
-    },
-    {
-      path: '/twoHeader',
-      component: resolve => require(['@/components/common/twoHeader'], resolve),
+
+        {
+          path: '/pr',
+          component: resolve => require(['@/components/company profile'], resolve),
+
+        },
+        {
+          path: '/cu',
+          component: resolve => require(['@/components/company culture'], resolve),
+
+        },
+        {
+          path: '/',
+          component: resolve => require(['@/components/Management team'], resolve),
+
+        },
+        {
+          path: '/',
+          component: resolve => require(['@/components/organization chart'], resolve),
+
+        },
+        {
+          path: '/',
+          component: resolve => require(['@/components/team style'], resolve),
+
+        },
+
+      ]
 
     },
   ]
