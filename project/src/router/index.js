@@ -60,5 +60,10 @@ mode: 'history',
       component: resolve => require(['@/components/common/oneHeader'], resolve),
 
     },
+    {
+      path: '/twoHeader',
+      component: resolve => require(['@/components/common/twoHeader'], resolve),
+
+    },
   ]
 })
