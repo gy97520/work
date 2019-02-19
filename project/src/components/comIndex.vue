@@ -25,7 +25,7 @@
           <h3>新闻动态</h3>
           <div style="margin-top: -23px;">_____</div>
           <br><br><br><br><br><br><br>
-          <div  style="color: white" @click="that.$jk.getDescribe('/moreNews')">MORE+</div>
+          <div  style="color: white" @click="that.$jk.getDescribe('/oneHeader')">MORE+</div>
           <br><br>
         </div>
       </el-col>
@@ -38,15 +38,8 @@
           <div style="margin-top: 10px;"><a href="">{{item.text}}</a></div>
         </div>
 
-
-        <h3 style="text-align: center">新闻动态</h3>
-          <ul class="news">
-            <li v-for="item in sites"><a href="">{{item.name}}</a><span>{{item.time}}</span></li>
-
-          </ul>
-
         </div>
-        <p style="text-align: right;" class="p1">更多...</p>
+
       </el-col>
     </el-row>
     <el-row>
@@ -77,7 +70,10 @@
 
       </div>
     </el-row>
-
+    <el-row>
+      <br>
+     <input type="button" value="查看更多" style="width:150px;height:50px;border:2px solid black;background:transparent;margin-right: 0px;margin-left: 820px;font-weight: 700;">
+    </el-row>
 
   </div>
 
@@ -119,14 +115,7 @@
           this.isChange = -1;
         },
 
-            sites: [
-              { name: '文章标题风景园林设计文化的认识和实践体会',time:'2018-11-29' },
-              { name: '文章标题风景园林设计文化的认识和实践体会',time:'2018-11-29' },
-              { name: '文章标题风景园林设计文化的认识和实践体会',time:'2018-11-29' },
-              { name: '文章标题风景园林设计文化的认识和实践体会',time:'2018-11-29' },
-              { name: '文章标题风景园林设计文化的认识和实践体会',time:'2018-11-29' },
-              { name: '文章标题风景园林设计文化的认识和实践体会',time:'2018-11-29' },
-            ],
+
           }
 
 

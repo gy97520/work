@@ -9,6 +9,7 @@ export default{
   q6:require ('./qq6.jpg'),
   q7:require ('./qq7.jpg'),
   bg_index:require('./comindex/bg_index.jpg'),
+  /*bg1:require('./comHeader/bg1.jpg'),*/
 
 
 }

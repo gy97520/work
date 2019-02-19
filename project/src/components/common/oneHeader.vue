@@ -1,5 +1,8 @@
 <template>
-  <div class="bannerHover" >
+  <div style="width: 1617px;margin: 0 auto;">
+    <div class="clearfix" style="height:270px;">
+  <div class="bannerHover">
+
     <el-menu
       :default-active="activeIndex"
       class="el-menu-demo"
@@ -19,18 +22,28 @@
       <el-menu-item index="3">招贤纳士</el-menu-item>
       <el-menu-item index="4">联系我们</el-menu-item>
     </el-menu>
-    <!--   <div class="nav">
-         <img :src="this.$img.logoNav" alt="">
-         <span class="themeColor in_blo" style="vertical-align: middle">聚而禾科技</span>
-         <ul>
-           <li v-for="(item,index) in navSelect" :class="{navSelect:index===0}">
-             <a @click="that.$herf.router(item.path,item.hasOwnProperty('id')?{id:item.id}:'')">{{item.value}}</a>
-             <i class="in_blo lines"></i>
-           </li>
 
-         </ul>
-       </div>-->
   </div>
+    </div>
+
+    <div class="left_nav">
+      <h2>走进聚而禾</h2>
+      <ul class="lefu">
+        <li><a href="">公司简介</a></li>
+        <li><a href="">公司文化</a></li>
+        <li><a href="">组织架构</a></li>
+        <li><a href="">资质荣誉</a></li>
+        <li><a href="">管理团队</a></li>
+        <li><a href="">团队风采</a></li>
+      </ul>
+    </div>
+
+    <div style="height:300px;background: black;margin-top: 20px;">
+
+    </div>
+
+  </div>
+
 
 </template>
 
@@ -98,5 +111,48 @@
     flex-direction: column;
     margin: 7.5px;
     border-radius: 3px;
+  }
+ .left_nav h2{
+    font-size: 22px;
+    height: 70px;
+    background: white;
+    line-height:70px;
+  }
+  .left_nav{
+
+    width: 300px;
+    height:590px;
+    background: rgba(252, 252, 252, 0.86);
+    border: 1px solid #dedede;
+
+  }
+  h2{
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .lefu{
+    width:100%;
+    margin-left: -40px;
+  }
+  .lefu li{
+    height: 60px;
+    line-height: 60px;
+
+  }
+  .lefu li:hover{
+    background: #eeeeee;
+
+  }
+  .lefu li a{
+    width:100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .lefu li a:hover{
+    text-decoration: none;
   }
 </style>

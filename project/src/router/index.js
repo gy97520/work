@@ -13,7 +13,11 @@ mode: 'history',
       component: resolve => require(['@/components/vindex'], resolve),
 
     },
+    {
+      path: '/oneHeader',
+      component: resolve => require(['@/components/common/oneHeader'], resolve),
 
+    },
 
     {
       path: '/',
