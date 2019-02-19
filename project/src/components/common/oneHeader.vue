@@ -32,7 +32,7 @@
       <ul class="lefu">
         <router-link to="/pr" tag="li"><a href="">公司简介</a></router-link>
         <router-link to="/cu" tag="li"><a href="">公司文化</a></router-link>
-        <router-link to="/pr" tag="li"><a href="">组织架构</a></router-link>
+        <router-link to="/org" tag="li"><a href="">组织架构</a></router-link>
         <router-link to="/pr" tag="li"><a href="">资质荣誉</a></router-link>
         <router-link to="/pr" tag="li"><a href="">管理团队</a></router-link>
         <router-link to="/pr" tag="li"><a href="">团队风采</a></router-link>

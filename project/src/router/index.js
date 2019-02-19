@@ -77,7 +77,7 @@ mode: 'history',
 
         },
         {
-          path: '/',
+          path: '/org',
           component: resolve => require(['@/components/organization chart'], resolve),
 
         },
