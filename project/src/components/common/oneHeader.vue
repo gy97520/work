@@ -1,7 +1,7 @@
 <template>
   <div style="width: 1617px;margin: 0 auto;">
     <div class="clearfix" style="height:270px;">
-  <div class="bannerHover">
+  <div class="bannerHover1">
 
     <el-menu
       :default-active="activeIndex"
@@ -49,7 +49,7 @@
 
 <script>
   export default {
-    name: "navs",
+    /*name: "navs",*/
     data() {
       return {
         activeIndex: '1',

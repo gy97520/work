@@ -13,11 +13,7 @@ mode: 'history',
       component: resolve => require(['@/components/vindex'], resolve),
 
     },
-    {
-      path: '/oneHeader',
-      component: resolve => require(['@/components/common/oneHeader'], resolve),
 
-    },
 
     {
       path: '/',
@@ -59,6 +55,10 @@ mode: 'history',
       path: '/home',
       component: resolve => require(['@/components/home'], resolve),
     },
+    {
+      path: '/oneHeader',
+      component: resolve => require(['@/components/common/oneHeader'], resolve),
 
+    },
   ]
 })

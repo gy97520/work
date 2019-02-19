@@ -26,8 +26,16 @@ ul li{
   background:#f7f7f7a6;
 }
 .bannerHover{
- background-image: url("../images/comHeader/bg1.jpg ");
+ /*background-image: url("../images/comHeader/bg1.jpg ");*/
  position: fixed;
+  top: 0px;
+ /* left:150px;*/
+  z-index: 200;
+
+}
+.bannerHover1{
+  background-image: url("../images/comHeader/bg1.jpg ");
+  position: fixed;
   top: 0px;
   left:150px;
   z-index: 200;

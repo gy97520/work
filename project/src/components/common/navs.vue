@@ -1,5 +1,5 @@
 <template>
-  <div class="bannerHover" >
+  <div class="bannerHover">
     <el-menu
       :default-active="activeIndex"
       class="el-menu-demo"
