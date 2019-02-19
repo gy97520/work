@@ -25,6 +25,13 @@ ul li{
   height: 800px;
   background:#f7f7f7a6;
 }
+#culture{
+  background: url("../images/comHeader/bg8.jpg") center top no-repeat;
+  width: 1300px;
+  height:100px;
+  float: left;
+  margin-left:15px
+}
 .bannerHover{
  position: fixed;
   top: 0px;

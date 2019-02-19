@@ -26,16 +26,23 @@
   </div>
     </div>
 
-    <div class="left_nav">
+    <div class="clearfix">
+    <div class="left_nav" style="float: left">
       <h2>走进聚而禾</h2>
       <ul class="lefu">
-        <li><a href="">公司简介</a></li>
-        <li><a href="">公司文化</a></li>
-        <li><a href="">组织架构</a></li>
-        <li><a href="">资质荣誉</a></li>
-        <li><a href="">管理团队</a></li>
-        <li><a href="">团队风采</a></li>
+        <router-link to="/pr" tag="li"><a href="">公司简介</a></router-link>
+        <router-link to="/cu" tag="li"><a href="">公司文化</a></router-link>
+        <router-link to="/pr" tag="li"><a href="">组织架构</a></router-link>
+        <router-link to="/pr" tag="li"><a href="">资质荣誉</a></router-link>
+        <router-link to="/pr" tag="li"><a href="">管理团队</a></router-link>
+        <router-link to="/pr" tag="li"><a href="">团队风采</a></router-link>
       </ul>
+
+    </div>
+  <!--<router-view></router-view>-->
+      <transition name="move" mode="out-in">
+        <router-view/>
+      </transition>
     </div>
 
     <div style="height:300px;background: black;margin-top: 20px;">
@@ -54,6 +61,7 @@
       return {
         activeIndex: '1',
         listData: [],
+
         oneDetail: [
           {value: '公司简介', path: 'index'},
           {value: '公司文化', path: 'film', id: 0},
