@@ -44,7 +44,7 @@
         listData: [],
         that:this,
         oneDetail: [
-          {value: '公司简介', path: 'index',addres:'pr'},
+          {value: '公司简介', path: 'index',addres:'Hnavs'},
           {value: '公司文化', path: 'film',addres:'cu'},
           {value: '组织架构', path: 'login',addres:'org'},
           {value: '资质荣誉', path: 'about_culture',addres:'cu'},
