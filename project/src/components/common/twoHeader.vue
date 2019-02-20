@@ -25,18 +25,20 @@
 
       </div>
     </div>
-
-    <div class="left_nav">
+    <div class="clearfix" >
+    <div class="left_nav" style="float: left">
       <h2>业务体系</h2>
       <ul class="lefu">
-        <li><a href="">业务领域</a></li>
-        <li><a href="">项目成果</a></li>
-        <li><a href="">产品展示</a></li>
-        <li><a href="">解决方案</a></li>
-        <li><a href="">技术支持</a></li>
+        <router-link to="bu" tag="li"><a>业务领域</a></router-link>
+        <router-link to="result"  tag="li"><a>项目成果</a></router-link>
+        <router-link to="result"  tag="li"><a>产品展示</a></router-link>
+        <router-link to="solution"  tag="li"><a>解决方案</a></router-link>
+        <router-link to=""  tag="li"><a>技术支持</a></router-link>
       </ul>
-    </div>
 
+    </div>
+    <router-view></router-view>
+    </div>
     <div style="height:300px;background: black;margin-top: 20px;">
 
     </div>
@@ -47,8 +49,9 @@
 </template>
 
 <script>
+
     export default {
-        name: "two-hearder",
+        name: "two-header",
       data() {
         return {
           activeIndex: '1',
@@ -69,6 +72,7 @@
             {value: '技术支持', path: 'join_us'},
 
           ],
+
         }
       },
       methods: {
