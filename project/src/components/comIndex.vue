@@ -26,7 +26,6 @@
           <div style="margin-top: -23px;">_____</div>
           <br><br><br><br><br><br><br>
           <div  style="color: white" @click="that.$jk.getDescribe('/oneHeader')">MORE+</div>
-
           <br><br>
         </div>
       </el-col>

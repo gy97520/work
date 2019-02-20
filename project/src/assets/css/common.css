@@ -32,6 +32,12 @@ ul li{
   float: left;
   margin-left:15px
 }
+.culture1{
+  width: 1300px;
+  height:536px;
+  float: left;
+  margin-left:15px
+}
 .bannerHover{
  position: fixed;
   top: 0px;
@@ -106,4 +112,9 @@ ul li{
   color: black;
 
 
+}
+/*分页按钮*/
+.el-pager li {
+  background: #e3e3ea;
+  margin-right: 20px;
 }

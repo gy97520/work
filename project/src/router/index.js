@@ -78,12 +78,12 @@ mode: 'history',
 
         },
         {
-          path: '/',
+          path: '/org',
           component: resolve => require(['@/components/organization chart'], resolve),
 
         },
         {
-          path: '/',
+          path: '/team',
           component: resolve => require(['@/components/team style'], resolve),
 
         },
