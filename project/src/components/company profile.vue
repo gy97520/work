@@ -30,6 +30,4 @@
     }
 </script>
 
-<style scoped>
 
-</style>
