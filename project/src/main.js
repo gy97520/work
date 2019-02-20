@@ -10,7 +10,7 @@ import fun from './jiekou.js';
 import img from '../src/assets/images/index.js'
 import preview from 'vue-photo-preview'
 import 'vue-photo-preview/dist/skin.css'
-import jquery from 'jquery'
+import $ from 'jquery'
 import animated from 'animate.css'
 import '../src/assets/css/common.css'
 import 'vue-awesome/icons'
@@ -28,7 +28,7 @@ Vue.component('icon',Icon)
 Vue.prototype.$img=img;
 Vue.prototype.$ajax=axios;
 /*Vue.prototype.$jk=fun;*/
-Vue.prototype.$http=jquery;
+Vue.prototype.$=$;
 axios.defaults.baseURL = 'https://mumuwu.com/mmw-official-service';
 axios.defaults.timeout  = 15000;
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
