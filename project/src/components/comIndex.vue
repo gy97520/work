@@ -2,7 +2,7 @@
 
   <div class="container bg_index" >
     <div class="row"></div>
-    <el-row>
+    <el-row >
 
       <el-col :span="5" >
         <div>

@@ -5,7 +5,7 @@
       class="el-menu-demo"
       mode="horizontal"
     >
-      <div class="logo"><img src="../../assets/images/comindex/logo_white.png"/></div>
+      <div class="logo"><img src="../../assets/images/comindex/logo_white.png" style="width:80%;margin-left: 158px;"/></div>
       <el-menu-item index="1">首页</el-menu-item>
       <el-submenu index="2" >
         <template slot="title">走进聚而禾</template>
@@ -20,17 +20,7 @@
       <el-menu-item index="4">招贤纳士</el-menu-item>
       <el-menu-item index="5">联系我们</el-menu-item>
     </el-menu>
-    <!--   <div class="nav">
-         <img :src="this.$img.logoNav" alt="">
-         <span class="themeColor in_blo" style="vertical-align: middle">聚而禾科技</span>
-         <ul>
-           <li v-for="(item,index) in navSelect" :class="{navSelect:index===0}">
-             <a @click="that.$herf.router(item.path,item.hasOwnProperty('id')?{id:item.id}:'')">{{item.value}}</a>
-             <i class="in_blo lines"></i>
-           </li>
 
-         </ul>
-       </div>-->
   </div>
 
 </template>

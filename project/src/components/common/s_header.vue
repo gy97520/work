@@ -1,8 +1,8 @@
 <template>
-    <div class="s_header">
+    <div class="s_header" style="width: 82%;margin: 0 auto;" >
       <el-carousel :interval="8000" arrow="always" height='500px' >
-        <el-carousel-item v-for="item in carousel_img" :key="item" style="width: 100%"  height="500px"  >
-          <img :src="item" alt="" style="width: 100%;"  height="500px" >
+        <el-carousel-item v-for="item in carousel_img" :key="item" style="width: 100%"  height="600px"  >
+          <img :src="item" alt="" style="width: 100%;"  height="600px" >
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -18,7 +18,7 @@
         name: "s_header",
         data() {
           return{
-            carousel_img:[this.$img.q5,this.$img.q6, this.$img.q7]
+            carousel_img:[this.$img.slide1,this.$img.slide2, this.$img.slide3]
 
           }
 
