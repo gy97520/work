@@ -1,5 +1,5 @@
 <template>
-  <div class="culture">
+  <div class="culture1">
     <h4 class="titl_h4">项目成果</h4>
     <div class="row share">
       <ul>

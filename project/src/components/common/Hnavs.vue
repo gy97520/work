@@ -17,7 +17,7 @@
         </el-submenu>
         <el-submenu index="3">
           <template slot="title">业务体系</template>
-          <el-menu-item :index="'2-'+index"  v-for="(item,index) in twoDetail " :key="index">{{item.value}}</el-menu-item>
+          <el-menu-item :index="'2-'+index"  v-for="(item,index) in twoDetail " :key="index" @click="that.$jk.getDescribe(item.addres)">{{item.value}}</el-menu-item>
         </el-submenu>
         <el-menu-item index="4" @click="that.$jk.getDescribe('/')">招贤纳士</el-menu-item>
         <el-menu-item index="5" @click="that.$jk.getDescribe('/')">联系我们</el-menu-item>
@@ -46,11 +46,11 @@
           {value: '团队风采', path: 'contact_us',addres:'team'},
         ],
         twoDetail: [
-          {value: '业务领域', path: 'index'},
-          {value: '项目成果', path: 'film', id: 0},
-          {value: '产品展示', path: 'login'},
-          {value: '解决方案', path: 'about_culture', id: 1},
-          {value: '技术支持', path: 'join_us'},
+          {value: '业务领域', path: 'index',addres:'bu'},
+          {value: '项目成果', path: 'film',addres:'result'},
+          {value: '产品展示', path: 'login',addres:'result'},
+          {value: '解决方案', path: 'about_culture',addres:'solution'},
+          {value: '技术支持', path: 'join_us',addres:'solution'},
 
         ],
       }

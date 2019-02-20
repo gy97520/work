@@ -13,8 +13,11 @@ mode: 'history',
       component: resolve => require(['@/components/vindex'], resolve),
 
     },
+    {
+      path: '/Hnavs',
+      component: resolve => require(['@/components/common/Hnavs'], resolve),
 
-
+    },
     {
       path: '/',
       component: resolve => require(['@/components/common/static_home'], resolve),
