@@ -34,6 +34,7 @@ mode: 'history',
 
         },
 
+
       ]
     },
 
@@ -139,7 +140,12 @@ mode: 'history',
         },
 
       ]
-    }
+    },
+    {
+      path: '/contact',
+      component: resolve => require(['@/components/contact'], resolve),
+
+    },
 
 
       ]

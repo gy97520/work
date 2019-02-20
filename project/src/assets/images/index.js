@@ -17,6 +17,7 @@ export default{
   huodong6:require('./team style/huodong6.jpg'),
   huodong7:require('./team style/huodong7.jpg'),
   huodong8:require('./team style/huodong8.jpg'),
+  contact:require('./contact.jpg')
 
 
 }
