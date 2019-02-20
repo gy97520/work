@@ -55,6 +55,7 @@ mode: 'history',
       path: '/home',
       component: resolve => require(['@/components/home'], resolve),
     },
+
     {
       path: '/oneHeader',
       component: resolve => require(['@/components/common/oneHeader'], resolve),
@@ -90,5 +91,53 @@ mode: 'history',
       ]
 
     },
-  ]
+    {
+      path: '/twoHeader',
+      component: resolve => require(['@/components/common/twoHeader'], resolve),
+      children:[
+
+
+        {
+          path: '/bu',
+          component: resolve => require(['@/components/businessArea'], resolve),
+
+        },
+        {
+          path: '/result',
+          component: resolve => require(['@/components/projectResult'], resolve),
+
+        },
+        {
+          path: '/',
+          component: resolve => require(['@/components/Management team'], resolve),
+
+        },
+        {
+          path: '/solution',
+          component: resolve => require(['@/components/solution'], resolve),
+        },
+        {
+          path: '/',
+          component: resolve => require(['@/components/team style'], resolve),
+
+        },
+      ]
+    },
+    {
+      path: '/threeHeader',
+      component: resolve => require(['@/components/common/threeHeader'], resolve),
+      children:[
+
+
+        {
+          path: '/employ',
+          component: resolve => require(['@/components/employ'], resolve),
+
+        },
+
+      ]
+    }
+
+
+      ]
 })
