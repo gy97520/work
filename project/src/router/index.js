@@ -73,7 +73,7 @@ mode: 'history',
 
         },
         {
-          path: '/',
+          path: '/man',
           component: resolve => require(['@/components/Management team'], resolve),
 
         },
