@@ -82,7 +82,7 @@ mode: 'history',
 
         },
         {
-          path: '/',
+          path: '/team',
           component: resolve => require(['@/components/team style'], resolve),
 
         },

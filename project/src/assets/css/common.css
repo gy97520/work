@@ -107,3 +107,8 @@ ul li{
 
 
 }
+/*分页按钮*/
+.el-pager li {
+  background: #e3e3ea;
+  margin-right: 20px;
+}
