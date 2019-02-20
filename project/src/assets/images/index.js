@@ -9,7 +9,15 @@ export default{
   q6:require ('./qq6.jpg'),
   q7:require ('./qq7.jpg'),
   bg_index:require('./comindex/bg_index.jpg'),
-  /*bg1:require('./comHeader/bg1.jpg'),*/
+  huodong:require('./team style/huodong.jpg'),
+  huodong1:require('./team style/huodong1.jpg'),
+  huodong2:require('./team style/huodong2.jpg'),
+  huodong3:require('./team style/huodong3.jpg'),
+  huodong4:require('./team style/huodong4.jpg'),
+  huodong5:require('./team style/huodong5.jpg'),
+  huodong6:require('./team style/huodong6.jpg'),
+  huodong7:require('./team style/huodong7.jpg'),
+  huodong8:require('./team style/huodong8.jpg'),
 
 
 }
