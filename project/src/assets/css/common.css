@@ -16,14 +16,21 @@ ul li{
   list-style: none;
 }
 .container{
-  width: 1200px;
+  width: 1655px;
   margin: 0 auto;
 
 }
 .bg_index{
- /* background-image: url("../images/comindex/bg_index.jpg");*/
+  background-image: url("../images/comindex/bg_index.jpg");
   height: 800px;
-  background:#f7f7f7a6;
+  margin: 0 auto;
+ /* width: 80%;*/
+
+  background-position: center;
+  background-size: cover;
+  min-height: 360px;
+  background-attachment: fixed;
+  /*background:#f7f7f7a6;*/
 }
 .culture{
   background: url("../images/comHeader/bg8.jpg") center top no-repeat;
