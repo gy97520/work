@@ -23,8 +23,11 @@
 </template>
 
 <script>
-    export default {
-      name: "three-header",
+  import hnavs from './Hnavs';
+  export default {
+    components: {
+      hnavs
+    },
       data() {
         return {
           activeIndex: '1',

@@ -19,8 +19,8 @@
           <template slot="title">业务体系</template>
           <el-menu-item :index="'2-'+index"  v-for="(item,index) in twoDetail " :key="index" @click="that.$jk.getDescribe(item.addres)">{{item.value}}</el-menu-item>
         </el-submenu>
-        <el-menu-item index="4" @click="that.$jk.getDescribe('/')">招贤纳士</el-menu-item>
-        <el-menu-item index="5" @click="that.$jk.getDescribe('/')">联系我们</el-menu-item>
+        <el-menu-item index="4" @click="that.$jk.getDescribe('/employ')">招贤纳士</el-menu-item>
+        <el-menu-item index="5" @click="that.$jk.getDescribe('/contact')">联系我们</el-menu-item>
       </el-menu>
 
     </div>

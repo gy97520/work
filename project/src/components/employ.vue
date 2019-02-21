@@ -1,5 +1,5 @@
 <template>
-    <div class="culture">
+    <div class="culture1">
       <h4 class="titl_h4">人才招聘</h4>
       <el-collapse v-model="activeName" accordion>
         <el-collapse-item title="测绘及地理信息技术人员" name="1">
