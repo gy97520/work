@@ -59,6 +59,7 @@
 </script>
 
 <style scoped>
+
   .nav {
     border-bottom: solid 1px #e6e6e6;
     box-sizing: border-box;
