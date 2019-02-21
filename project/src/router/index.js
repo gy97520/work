@@ -87,6 +87,11 @@ mode: 'history',
 
         },
         {
+          path: '/qua',
+          component: resolve => require(['@/components/enterprise qualification'], resolve),
+
+        },
+        {
           path: '/team',
           component: resolve => require(['@/components/team style'], resolve),
 

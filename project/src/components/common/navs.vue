@@ -37,7 +37,7 @@
           {value: '公司简介', path: 'index',addres:'pr'},
           {value: '公司文化', path: 'film',addres:'cu'},
           {value: '组织架构', path: 'login',addres:'org'},
-          {value: '资质荣誉', path: 'about_culture',addres:'cu'},
+          {value: '资质荣誉', path: 'about_culture',addres:'qua'},
           {value: '管理团队', path: 'join_us',addres:'man'},
           {value: '团队风采', path: 'contact_us',addres:'team'},
         ],
