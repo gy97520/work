@@ -1,5 +1,6 @@
 <template>
   <div class="container" >
+    <hnavs></hnavs>
     <div class="row"></div>
     <el-row>
 
@@ -14,14 +15,19 @@
         </div>
       </el-col>
     </el-row>
-
+    <vfooter></vfooter>
   </div>
 
 </template>
 
 <script>
-    export default {
-        name: "more-news",
+  import hnavs from './common/Hnavs';
+  import vfooter from './common/vfooter';
+  export default {
+    components: {
+      hnavs,
+      vfooter,
+    },
       data() {
         return {
           that: this,

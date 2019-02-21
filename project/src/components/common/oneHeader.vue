@@ -17,10 +17,7 @@
       </ul>
 
     </div>
-  <!--<router-view></router-view>-->
-      <transition name="move" mode="out-in">
-        <router-view/>
-      </transition>
+  <router-view></router-view>
     </div>
 
 <vfooter></vfooter>
@@ -31,7 +28,7 @@
 
 <script>
   import hnavs from './Hnavs';
-import vfooter from './vfooter';
+  import vfooter from './vfooter';
   export default {
       components: {
         hnavs,
