@@ -15,10 +15,7 @@
     </div>
     <router-view></router-view>
     </div>
-    <div style="height:300px;background: black;margin-top: 20px;">
-
-    </div>
-
+    <vfooter></vfooter>
   </div>
 
 
@@ -28,7 +25,8 @@
   import hnavs from './Hnavs';
   export default {
     components: {
-      hnavs
+      hnavs,
+      vfooter,
     },
       data() {
         return {
