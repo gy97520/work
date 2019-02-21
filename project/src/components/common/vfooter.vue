@@ -50,11 +50,11 @@
                 data: {
                     aboutUs: [
                         {name: '集团简介', path: 'pr'},
-                        {name: '公司文化', path: '/cu'},
-                        {name: '组织架构', path: '/org'},
-                        {name: '资质荣誉', path: '/cu'},
-                        {name: '管理团队', path: '/man'},
-                        {name: '团队风采', path: '/team'},
+                        {name: '公司文化', path: 'cu'},
+                        {name: '组织架构', path: 'org'},
+                        {name: '资质荣誉', path: 'cu'},
+                        {name: '管理团队', path: 'man'},
+                        {name: '团队风采', path: 'team'},
                     ],
                     trends: [
                         {name: '业务领域', path: '/bu'},
@@ -69,7 +69,7 @@
                         {name: '关于我们', path: '/contact'},
 
                   ],
-                  contact:[
+                    contact:[
                     {name:"浙江省杭州市西湖区天目山路160号国际花园西写字楼18A",name_icon:'home',},
                     {name:"0571-87670985",name_icon:'phone',},
                     {name:"313583016@qq.com",name_icon:'credit-card',},

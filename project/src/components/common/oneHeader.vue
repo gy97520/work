@@ -41,7 +41,7 @@
       return {
         activeIndex: '1',
         listData: [],
-
+/*
         oneDetail: [
           {value: '公司简介', path: 'index'},
           {value: '公司文化', path: 'film', id: 0},
@@ -57,7 +57,7 @@
           {value: '解决方案', path: 'about_culture', id: 1},
           {value: '技术支持', path: 'join_us'},
 
-        ],
+        ],*/
       }
     },
     methods: {
