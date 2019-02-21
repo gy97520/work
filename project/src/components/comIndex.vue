@@ -28,7 +28,7 @@
           <h3>新闻动态</h3>
           <div style="margin-top: -23px;">_____</div>
           <br><br><br><br><br><br><br>
-          <div  style="color: white" @click="that.$jk.getDescribe('/pr')">MORE+</div>
+          <div  style="color: white" @click="that.$jk.getDescribe('/moreNews')">MORE+</div>
           <br><br>
         </div>
       </el-col>

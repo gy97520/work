@@ -19,15 +19,16 @@ mode: 'history',
 
     },
     {
+      path: '/moreNews',
+      component: resolve => require(['@/components/moreNews'], resolve),
+
+    },
+    {
       path: '/',
       component: resolve => require(['@/components/common/static_home'], resolve),
 
       children:[
-        {
-          path: '/moreNews',
-          component: resolve => require(['@/components/moreNews'], resolve),
 
-        },
         {
           path: '/',
           component: resolve => require(['@/components/comIndex'], resolve),
