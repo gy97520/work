@@ -1,5 +1,5 @@
 <template>
-    <div class="s_header" style="width: 87%;margin: 0 auto;" >
+    <div class="s_header">
       <el-carousel :interval="8000" arrow="always" height='500px' >
         <el-carousel-item v-for="item in carousel_img" :key="item" style="width: 100%"  height="600px"  >
           <img :src="item" alt="" style="width: 100%;"  height="600px" >

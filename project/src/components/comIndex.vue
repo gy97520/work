@@ -1,25 +1,28 @@
 <template>
 
   <div class="container bg_index" >
-    <div class="row"></div>
+    <div class="row" style="height:30px;"></div>
     <el-row>
-
+      <el-col :span="1" >
+&nbsp;
+      </el-col>
       <el-col :span="5" >
         <div>
-          <img src="../assets/images/comindex/jianjie.jpg" height="348px" width="280px"  style="">
+          <img src="../assets/images/comindex/jianjie.jpg" height="345px" width="350px"  style="">
         </div>
       </el-col>
-      <el-col :span="7" style="background:white;margin-left:30px">
-        <div>
-          <h4 style="padding-left:20px;">公司简介</h4>
-          <div  style="margin:0 20px 12px 20px;">
-            {{this.text}}
+      <el-col :span="7">
+        <div  style="padding-left:20px;">
+          <h2>公司简介</h2>
+          <p style="color:rgb(152, 152, 152)">Company profile</p>
+          <div  style="margin:0 20px 12px 0;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{this.text}}
           </div>
 
         </div>
       </el-col>
-      <el-col :span="3" style="margin-left:20px" >
-        <div style="background:rgb(0, 66, 142);padding-left: 30px;color:white;">
+      <el-col :span="3" >
+        <div style="background:rgba(0, 90, 142, 0.43);padding-left: 30px;color:white;">
           <br><br>
           <p>NEWS</p>
           <h3>新闻动态</h3>
@@ -29,7 +32,7 @@
           <br><br>
         </div>
       </el-col>
-      <el-col :span="8" style="background:white;">
+      <el-col :span="7" style="background:rgba(255, 255, 255, 0.91);">
         <div>
 
           <br>
@@ -44,8 +47,8 @@
     </el-row>
     <el-row>
 
-      <el-col style="text-align: center;">
-        <br><br>
+      <el-col style="text-align: center;background:#bbbbbb6e;margin:30px 0 30px 0;">
+
         <h2>业务体系</h2>
         <p>Business area</p>
       </el-col>
@@ -72,7 +75,7 @@
     </el-row>
     <el-row>
       <br>
-     <input type="button" value="查看更多" style="width:150px;height:50px;border:2px solid black;background:transparent;margin-right: 0px;margin-left: 820px;font-weight: 700;">
+     <input type="button" value="查看更多" style="width:150px;height:50px;border:2px solid black;background:transparent;margin-left:1315px;font-weight: 700;">
     </el-row>
 
   </div>

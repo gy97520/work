@@ -1,6 +1,6 @@
 <template>
 
-  <div class="static_home">
+  <div class="static_home" style="width: 1665px;margin: 0 auto">
 
 
   <navs ></navs>

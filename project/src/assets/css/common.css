@@ -16,7 +16,7 @@ ul li{
   list-style: none;
 }
 .container{
-  width: 1655px;
+  width: 1665px;
   margin: 0 auto;
 
 }
@@ -24,13 +24,10 @@ ul li{
   background-image: url("../images/comindex/bg_index.jpg");
   height: 800px;
   margin: 0 auto;
- /* width: 80%;*/
-
   background-position: center;
   background-size: cover;
   min-height: 360px;
   background-attachment: fixed;
-  /*background:#f7f7f7a6;*/
 }
 .culture{
   background: url("../images/comHeader/bg8.jpg") center top no-repeat;
