@@ -2,7 +2,7 @@
 
   <div class="container bg_index" >
     <div class="row"></div>
-    <el-row >
+    <el-row>
 
       <el-col :span="5" >
         <div>
@@ -25,7 +25,7 @@
           <h3>新闻动态</h3>
           <div style="margin-top: -23px;">_____</div>
           <br><br><br><br><br><br><br>
-          <div  style="color: white" @click="that.$jk.getDescribe('/oneHeader')">MORE+</div>
+          <div  style="color: white" @click="that.$jk.getDescribe('/one')">MORE+</div>
           <br><br>
         </div>
       </el-col>
