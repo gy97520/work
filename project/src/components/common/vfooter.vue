@@ -57,16 +57,16 @@
                         {name: '团队风采', path: 'team'},
                     ],
                     trends: [
-                        {name: '业务领域', path: '/bu'},
-                        {name: '项目成果', path: '/result'},
-                        {name: '产品展示', path: '/news_list'},
-                        {name: '解决方案', path: '/solution'},
-                        {name: '技术支持', path: '/news_list'},
-                        {name: '解决方案', path: '/news_list'},
+                        {name: '业务领域', path: 'bu'},
+                        {name: '项目成果', path: 'result'},
+                        {name: '产品展示', path: 'news_list'},
+                        {name: '解决方案', path: 'solution'},
+                        {name: '技术支持', path: 'news_list'},
+                        {name: '解决方案', path: 'news_list'},
                         ],
                     sNav:[
-                        {name: '招贤纳士', path: '/employ',},
-                        {name: '关于我们', path: '/contact'},
+                        {name: '招贤纳士', path: 'em'},
+                        {name: '关于我们', path: 'contact'},
 
                   ],
                     contact:[

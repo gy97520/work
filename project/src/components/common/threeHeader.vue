@@ -22,6 +22,7 @@
 
 <script>
   import hnavs from './Hnavs';
+  import vfooter from './vfooter';
   export default {
     components: {
       hnavs,

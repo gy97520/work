@@ -15,6 +15,7 @@
     </div>
     <router-view></router-view>
     </div>
+
     <vfooter></vfooter>
   </div>
 
@@ -23,10 +24,11 @@
 
 <script>
   import hnavs from './Hnavs';
+  import vfooter from './vfooter';
   export default {
     components: {
       hnavs,
-      vfooter,
+      vfooter
     },
       data() {
         return {

@@ -31,7 +31,7 @@
 
 <script>
   import hnavs from './Hnavs';
-  import vfooter from './vfooter';
+import vfooter from './vfooter';
   export default {
       components: {
         hnavs,
@@ -41,23 +41,6 @@
       return {
         activeIndex: '1',
         listData: [],
-/*
-        oneDetail: [
-          {value: '公司简介', path: 'index'},
-          {value: '公司文化', path: 'film', id: 0},
-          {value: '组织架构', path: 'login'},
-          {value: '资质荣誉', path: 'about_culture', id: 1},
-          {value: '管理团队', path: 'join_us'},
-          {value: '团队风采', path: 'contact_us'},
-        ],
-        twoDetail: [
-          {value: '业务领域', path: 'index'},
-          {value: '项目成果', path: 'film', id: 0},
-          {value: '产品展示', path: 'login'},
-          {value: '解决方案', path: 'about_culture', id: 1},
-          {value: '技术支持', path: 'join_us'},
-
-        ],*/
       }
     },
     methods: {
