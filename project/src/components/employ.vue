@@ -1,7 +1,10 @@
 <template>
-    <div class="culture1">
-      <h4 class="titl_h4">人才招聘</h4>
-      <el-collapse v-model="activeName" accordion>
+    <div class="culture">
+      <br>
+      <div style="text-align: center;font-size: 20px;font-weight: 700">人才招聘</div>
+      <br>
+<div style="width: 87%;margin: 0 auto">
+      <el-collapse v-model="activeName" accordion >
         <el-collapse-item title="测绘及地理信息技术人员" name="1">
           <div>   1、能够熟练操作RTK，全站仪，水准仪，GPS等测绘仪器。<br>2、熟悉南方cass、ArcGIS等测绘软件的使用和地籍图，地形图等测图方面的工作流程。<br>3、熟悉地理信息系统空间数据分析。<br>4、 具有良好的团队合作能力和沟通表达能力，公司将为具带领团队作业的人才提供良好的发展平台。<br>5、测绘工程、地理信息系统工程专业毕业优先。
 
@@ -21,6 +24,7 @@
         </el-collapse-item>
 
       </el-collapse>
+</div>
     </div>
 </template>
 

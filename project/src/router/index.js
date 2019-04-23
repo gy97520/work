@@ -27,6 +27,7 @@ mode: 'history',
       name:"nav",
       component: resolve => require(['@/components/common/nav'], resolve),
          children:[
+
            {
             path: '/companyProfile',
             name:"companyProfile",

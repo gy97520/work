@@ -1,5 +1,5 @@
 <template>
-  <div class="bannerHover" style="position: fixed;top: 0;left: 85px;z-index: 10000;">
+  <div  style="position: fixed;top: 0;left: 85px;z-index: 10000;">
     <el-menu
       :default-active="activeIndex"
       class="el-menu-demo"
@@ -51,10 +51,6 @@
 
       }
     },
-
-    methods: {
-
-      }
 
   }
 </script>
