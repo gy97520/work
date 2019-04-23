@@ -23,6 +23,9 @@ export default{
   m5:require('./zheng/m5.jpg'),
   m6:require('./zheng/m6.jpg'),
   m7:require('./zheng/m7.jpg'),
+  m8:require('./zheng/m8.jpg'),
+  m9:require('./zheng/m9.jpg'),
+  m10:require('./zheng/m10.jpg'),
 
 
 }
