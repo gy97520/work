@@ -6,7 +6,7 @@
   <article class="jq22-container" >
     <div class="content">
       <div class="chroma-gallery mygallery"  >
-        <img :src="item" alt="Pic 1" v-for="(item,index) in imgsArr" data-largesrc="zheng/m1.jpg" >
+        <img :src="item" alt="Pic 1" v-for="(item,index) in imgsArr" data-largesrc="zheng/m1.jpg"  :preview="index" :preview-text="'描述文字'+index" >
 
       </div>
     </div>
