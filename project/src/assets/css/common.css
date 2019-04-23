@@ -31,22 +31,15 @@ ul li{
 }
 .culture{
   background: url("../images/comHeader/bg8.jpg") center top no-repeat;
-  width: 1300px;
-  height:590px;
-  float: left;
-  margin-left:15px
+  width: 1338px;
+  height: 587px;
+  margin-left: 15px;
+  margin-bottom: 6px;
 }
-.culture1{
-  width: 1300px;
-  height:536px;
-  float: left;
-  margin-left:15px
-}
-.bannerHover{
- position: fixed;
-  top: 0px;
-  z-index: 200;
 
+.bannerHover{
+  width:87%;
+  margin: 0 auto;
 }
 .bannerHover1{
   background-image: url("../images/comHeader/bg1.jpg ");
@@ -102,7 +95,7 @@ ul li{
 
 .logo{
   float: left;
-  margin-right:320px;
+  margin-right:260px;
   margin-left:10px;
   margin-top:-32px;
 }

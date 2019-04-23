@@ -42,32 +42,6 @@ Vue.prototype.$jk= {
   },
 
 };
-/*Vue.prototype.$herf={
-  ajax: (url,type,data)=> {
-    return axios[type](url, {
-      params: data
-    })
-      .then(res => {
-        if (res.status === 200) {
-          return res.data;
-        }
-      })
-      .catch(err => {
-        vm.$message.error('服务器繁忙！');
-        return '';
-      })},
-  router:(path,t)=>{
-    vm.$router.push({
-      path:(path || 'index'),
-      query:(t||'')
-    });
-  },
-  width:()=>{
-    return window.screen.width;
-  },
-}*/
-
-/* eslint-disable no-new */
 let vm=new Vue({
   el: '#app',
   router,

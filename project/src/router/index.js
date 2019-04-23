@@ -7,16 +7,84 @@ Vue.use(Router)
 export default new Router({
 mode: 'history',
   routes: [
-
     {
-      path: '/vindex',
-      component: resolve => require(['@/components/vindex'], resolve),
-
+      path: '/',
+      name:"index",
+      component: resolve => require(['@/components/index'], resolve),
     },
     {
-      path: '/Hnavs',
-      component: resolve => require(['@/components/common/Hnavs'], resolve),
+      path: '/header',
+      name:"header",
+      component: resolve => require(['@/components/common/header'], resolve),
+    },
+    {
+      path: '/sheader',
+      name:"sheader",
+      component: resolve => require(['@/components/common/sheader'], resolve),
+    },
+    {
+      path: '/nav',
+      name:"nav",
+      component: resolve => require(['@/components/common/nav'], resolve),
+         children:[
+           {
+            path: '/companyProfile',
+            name:"companyProfile",
+            component: resolve => require(['@/components/companyProfile'], resolve),
+            },
+           {
+            path: '/companyCulture',
+            name:"companyCulture",
+            component: resolve => require(['@/components/companyCulture'], resolve),
+            },
+           {
+            path: '/organizationChart',
+            name:"organizationChart",
+            component: resolve => require(['@/components/organizationChart'], resolve),
+            },
+           {
+            path: '/enterpriseQualification',
+            name:"enterpriseQualification",
+            component: resolve => require(['@/components/enterpriseQualification'], resolve),
+            },
+           {
+             path: '/managementTeam',
+             name:"managementTeam",
+             component: resolve => require(['@/components/managementTeam'], resolve),
+            },
+           {
+             path: '/teamStyle',
+             name:"teamStyle",
+             component: resolve => require(['@/components/teamStyle'], resolve),
 
+            },
+           {
+             path: '/businessArea',
+             name:"businessArea",
+             component: resolve => require(['@/components/businessArea'], resolve),
+
+            },
+            {
+              path: '/projectResult',
+              name:"projectResult",
+              component: resolve => require(['@/components/projectResult'], resolve),
+             },
+            {
+              path: '/productShow',
+              name:"productShow",
+              component: resolve => require(['@/components/productShow'], resolve),
+            },
+           {
+              path: '/solution',
+              name:"team style",
+              component: resolve => require(['@/components/solution'], resolve),
+            },
+            {
+              path: '/employ',
+              name:"employ",
+              component: resolve => require(['@/components/employ'], resolve),
+           },
+      ]
     },
     {
       path: '/moreNews',
@@ -24,135 +92,9 @@ mode: 'history',
 
     },
     {
-      path: '/',
-      component: resolve => require(['@/components/common/static_home'], resolve),
-
-      children:[
-
-        {
-          path: '/',
-          component: resolve => require(['@/components/comIndex'], resolve),
-
-        },
-
-
-      ]
-    },
-
-    {
-      path: '/vfooter',
-      component: resolve => require(['@/components/common/vfooter'], resolve),
-    },
-    {
-      path: '/login',
-      component: resolve => require(['@/components/login'], resolve),
-    },
-
-    {
-      path: '/solid',
-      component: resolve => require(['@/components/solid'], resolve),
-    },
-    {
-      path: '/film',
-      component: resolve => require(['@/components/film'], resolve),
-    },
-    {
-      path: '/home',
-      component: resolve => require(['@/components/home'], resolve),
-    },
-
-    {
-      path: '/oneHeader',
-      component: resolve => require(['@/components/common/oneHeader'], resolve),
-      children:[
-
-
-        {
-          path: '/pr',
-          component: resolve => require(['@/components/company profile'], resolve),
-
-        },
-        {
-          path: '/cu',
-          component: resolve => require(['@/components/company culture'], resolve),
-
-        },
-        {
-          path: '/man',
-          component: resolve => require(['@/components/Management team'], resolve),
-
-        },
-        {
-          path: '/org',
-          component: resolve => require(['@/components/organization chart'], resolve),
-
-        },
-        {
-          path: '/qua',
-          component: resolve => require(['@/components/enterprise qualification'], resolve),
-
-        },
-        {
-          path: '/team',
-          component: resolve => require(['@/components/team style'], resolve),
-
-        },
-
-      ]
-
-    },
-    {
-      path: '/twoHeader',
-      component: resolve => require(['@/components/common/twoHeader'], resolve),
-      children:[
-
-
-        {
-          path: '/bu',
-          component: resolve => require(['@/components/businessArea'], resolve),
-
-        },
-        {
-          path: '/result',
-          component: resolve => require(['@/components/projectResult'], resolve),
-
-        },
-        {
-          path: '/',
-          component: resolve => require(['@/components/Management team'], resolve),
-
-        },
-        {
-          path: '/solution',
-          component: resolve => require(['@/components/solution'], resolve),
-        },
-        {
-          path: '/',
-          component: resolve => require(['@/components/team style'], resolve),
-
-        },
-      ]
-    },
-    {
-      path: '/threeHeader',
-      component: resolve => require(['@/components/common/threeHeader'], resolve),
-      children:[
-
-
-        {
-          path: '/employ',
-          component: resolve => require(['@/components/employ'], resolve),
-
-        },
-
-      ]
-    },
-    {
       path: '/contact',
       component: resolve => require(['@/components/contact'], resolve),
 
     },
-
-
       ]
 })

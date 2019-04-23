@@ -1,5 +1,8 @@
 <template>
+  <div>
+    <!--<Header />-->
   <div class="culture">
+    <br>
     <div style="float: left;margin-right: 30px;">
       <img src="../assets/images/comindex/slide1.jpg" style="width:450px;height:300px;" class="img-responsive" />
     </div>
@@ -21,12 +24,13 @@
         卓越绩效”管理机制,提升产品体验。客户满意率达100%。</p>
     </div>
   </div>
-
+  </div>
 </template>
 
 <script>
     export default {
-        name: "company profile"
+        name: "company profile",
+
     }
 </script>
 

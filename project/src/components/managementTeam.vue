@@ -1,13 +1,13 @@
 <template>
-  <div>
-    <div>
-      <h2 style="text-align:center;width:1300px;margin-left: 190px;">管理团队</h2>
-    </div>
-    <div class="culture1">
+
+    <div class="culture">
+      <br>
+      <div style="text-align: center;font-size: 20px;font-weight: 700">管理团队</div>
+
       <div style="width: 1300px;height:430px;">
         <ul class="tx-team" style="overflow: hidden;">
-          <li v-for="(item,index) in datas[currentKey]" class="people" style="border: 1px solid  #80808026;width:320px;height:420px;background:rgba(252, 252, 252, 0.86)">
-            <img :src="item.img"  style="margin-top: 30px;border-radius:60px;width:120px;height:120px;margin-left: 100px;">
+          <li v-for="(item,index) in datas[currentKey]" class="people" style="border: 1px solid  #80808026;width:320px;height:420px;background:rgba(172, 189, 174, 0.38);">
+            <img :src="item.img"  style="margin-top:30px;border-radius:60px;width:120px;height:120px;margin-left: 100px;">
             <p>{{item.name}}</p>
             <p></p>
             <p>{{item.work}}</p>
@@ -17,11 +17,10 @@
         </ul>
       </div>
       <div style="width: 1300px;height:80px;background:rgba(252, 252, 252, 0.86);text-align: center;margin-top: 20px;overflow: hidden">
-        <input v-for="(item,index) in ['第一页','第二页','第三页']" type="button" :value="item"  @click="a(index)" style="width:100px;height:40px;margin:20px 30px 0 10px;background: white;border: none;font-weight: 700">
+        <input v-for="(item,index) in ['第一页','第二页','第三页']" type="button" :value="item"  @click="a(index)" style="width:100px;height:40px;margin:20px 30px 0 10px;background:rgba(172, 189, 174, 0.38);border: none;font-weight: 700">
       </div>
     </div>
 
-  </div>
 </template>
 
 

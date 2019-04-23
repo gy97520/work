@@ -1,7 +1,8 @@
 <template>
-  <div class="culture1">
-    <h4 class="titl_h4">业务领域</h4>
-    <div class="row share" >
+  <div class="culture">
+    <br>
+    <div style="text-align: center;font-size: 20px;font-weight: 700">业务领域</div>
+    <div class="row share" style="margin-left: 33px;">
       <ul>
         <li class="hit1"><img src="../assets/images/project result/cehui2.jpg"/>
           <div class="cen1">
@@ -34,7 +35,7 @@
         </li>
       </ul>
     </div>
-    <div class="row share">
+    <div class="row share" style="margin-left: 33px;">
       <ul>
         <li class="hit4"><img src="../assets/images/business area/ggzc1.jpg"/>
           <div class="cen1">

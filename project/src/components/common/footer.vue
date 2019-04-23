@@ -1,5 +1,5 @@
 <template>
-    <div class="footer ">
+    <div class="footer">
         <div>
             <div class="w_main align_between">
 
@@ -49,23 +49,22 @@
             return {
                 data: {
                     aboutUs: [
-                        {name: '集团简介', path: 'pr'},
-                        {name: '公司文化', path: 'cu'},
-                        {name: '组织架构', path: 'org'},
-                        {name: '资质荣誉', path: 'cu'},
-                        {name: '管理团队', path: 'man'},
-                        {name: '团队风采', path: 'team'},
+                        {name: '集团简介', path: 'companyProfile'},
+                        {name: '公司文化', path: 'companyCulture'},
+                        {name: '组织架构', path: 'organizationChart'},
+                        {name: '资质荣誉', path: 'enterpriseQualification'},
+                        {name: '管理团队', path: 'managementTeam'},
+                        {name: '团队风采', path: 'teamStyle'},
                     ],
                     trends: [
-                        {name: '业务领域', path: 'bu'},
-                        {name: '项目成果', path: 'result'},
-                        {name: '产品展示', path: 'news_list'},
+                        {name: '业务领域', path: 'businessArea'},
+                        {name: '项目成果', path: 'projectResult'},
+                        {name: '产品展示', path: 'productShow'},
                         {name: '解决方案', path: 'solution'},
                         {name: '技术支持', path: 'news_list'},
-                        {name: '解决方案', path: 'news_list'},
                         ],
                     sNav:[
-                        {name: '招贤纳士', path: 'em'},
+                        {name: '招贤纳士', path: 'employ'},
                         {name: '关于我们', path: 'contact'},
 
                   ],
@@ -118,8 +117,10 @@
         height: 300px;
         color: white;
         padding-top: 50px;
+        width:87%;
         font-size: 0.8em;
         background:#1a1a1a;
+        margin: 0 auto;
     }
 
     @media screen and (max-width: 500px) {

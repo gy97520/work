@@ -1,6 +1,15 @@
 <template>
-
+<div>
+  <Sheader></Sheader>
+  <div class="s_header" style="width: 87.5%;margin: 0 auto">
+    <el-carousel :interval="8000" arrow="always" height='500px' >
+      <el-carousel-item v-for="item in carousel_img" :key="item" style="width: 100%"  height="600px"  >
+        <img :src="item" alt="" style="width: 100%;"  height="600px" >
+      </el-carousel-item>
+    </el-carousel>
+  </div>
   <div class="container bg_index" >
+
     <div class="row" style="height:30px;"></div>
     <el-row>
       <el-col :span="1" >
@@ -13,8 +22,8 @@
       </el-col>
       <el-col :span="7">
         <div  style="padding-left:20px;">
-          <h2>公司简介</h2>
-          <p style="color:rgb(152, 152, 152)">Company profile</p>
+          <h2 style="text-align: center">公司简介</h2>
+          <p style="color:rgb(152, 152, 152);text-align: center">Company profile</p>
           <div  style="margin:0 20px 12px 0;">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{this.text}}
           </div>
@@ -49,7 +58,8 @@
 
       <el-col style="text-align: center;background:#bbbbbb6e;margin:30px 0 30px 0;">
 
-        <h2>业务体系</h2>
+        <h2>业务领域</h2>
+        <p>{{num}}</p>
         <p>Business area</p>
       </el-col>
     </el-row>
@@ -79,15 +89,21 @@
     </el-row>
 
   </div>
-
+</div>
 </template>
 
 <script>
+  import Sheader from './common/sheader';
     export default {
-        name: "comIndex",
+        name: "index",
+        components:{
+        Sheader
+        },
       data(){
           return{
+            carousel_img:[this.$img.slide1,this.$img.slide2, this.$img.slide3],
             that:this,
+
             text:'杭州聚而禾土地规划设计咨询有限公司创建于2016年6月，位于杭州西湖区的黄龙商圈。具有土地规划、摄影测量与遥感、地理信息系统工程、工程测量、不动产测绘、不动产登记代理、土地勘测、林业调查规划设计、城乡规划编制、文物保护工程等行业资质。公司注册资本金1005万，公司自成立以来，累计承接项目上千万。' +
           '公司致力于土地调查评价、规划设计、政策咨询、项目前期服务、地理信息系统的技术开发、测绘技术、农林业调查与规划设计等业务领域，服务于各级国土、农业、林业、交通、水利等政府机关和企事业单位',
 
@@ -108,8 +124,8 @@
 
 
       },
-      methods: {
 
+      methods: {
         enter: function (index) {
           this.isChange = index;
 
@@ -117,16 +133,28 @@
         leave: function () {
           this.isChange = -1;
         },
-
-
-          }
-
-
+        },
 
     }
 </script>
 
 <style scoped>
+
+  .el-carousel__item h3 {
+    color: #475669;
+    font-size: 18px;
+    opacity: 0.75;
+    line-height: 300px;
+    margin: 0;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+    background-color: #99a9bf;
+  }
+
+  .el-carousel__item:nth-child(2n+1) {
+    background-color: #d3dce6;
+  }
   .rred{
     color: white;
     background-color: #1fa67a !important;

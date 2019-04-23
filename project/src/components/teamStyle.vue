@@ -1,14 +1,14 @@
 <template>
-  <div>
-  <div>
-    <h2 style="text-align:center;width:1300px;margin-left: 190px;">团队风采</h2>
-  </div>
-  <div class="culture1">
-    <div style="width: 1300px;height:430px;background:#fffbfb;">
-       <ul class="tx-team" style="overflow: hidden;">
+
+  <div class="culture">
+    <br>
+    <br>
+    <div style="text-align: center;font-size: 20px;font-weight: 700">团队风采</div>
+    <div style="width: 1300px;height:430px;">
+       <ul class="tx-team" style="overflow: hidden;margin-left: 20px">
       <li v-for="(item,index) in datas[currentKey]">
         <span class="tx-float">
-          <img :src="item.img"  style="margin-top: 40px;">
+          <img :src="item.img"  style="margin-top:20px;">
         </span>
         <span class="text">
           <h3 style="background: #eeeeeee3">{{item.tit}}</h3>
@@ -17,11 +17,9 @@
 
     </ul>
     </div>
-      <div style="width: 1300px;height:80px;background:#fffbfb;text-align: center;margin-top: 20px;overflow: hidden">
-       <input v-for="(item,index) in ['第一页','第二页','第三页']" type="button" :value="item"  @click="a(index)" style="width:100px;height:40px;margin:20px 30px 0 10px;background: white;border: none;font-weight: 700">
+      <div style="width: 1300px;height:80px;text-align: center;margin-top:15px;overflow: hidden">
+       <input v-for="(item,index) in ['第一页','第二页','第三页']" type="button" :value="item"  @click="a(index)" style="width:100px;height:40px;margin:0 30px 0 10px;background:rgba(172, 189, 174, 0.38);border: none;font-weight: 700">
     </div>
-  </div>
-
   </div>
 </template>
 

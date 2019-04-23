@@ -1,8 +1,6 @@
 const url='http://mumueaszen.qimutech.cn/image/';
 
 export default{
-  star_true:require ('./x2.jpg'),
-  star_false:require ('./x1.jpg'),
   slide1:require ('./comindex/slide1.jpg'),
   slide2:require ('./comindex/slide2.jpg'),
   slide3:require ('./comindex/slide3.jpg'),

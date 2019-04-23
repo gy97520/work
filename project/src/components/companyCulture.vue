@@ -1,7 +1,7 @@
 <template>
   <div class="culture" style="">
-    <div  style="margin:200px 0 0 170px;line-height: 30px;color:black;">
-      <h2 class="h2" style="margin-top:-100px;">简单</h2>
+    <div  style="line-height: 30px;color:black;padding: 60px 0 0 165px;">
+      <h2 class="h2" style="">简单</h2>
       <h4 class="h4" style=" text-align: left"> 大道至简。注重办事精简、力求效率，追求客户“最多跑一次”的目标。</h4>
       <h2 class="h2">互助</h2>
       <h4 class="h4" style=" text-align: left">  于内团结互助，于外合作相助。</h4>
@@ -16,7 +16,8 @@
 
 <script>
     export default {
-        name: "company culture"
+        name: "company culture",
+
     }
 </script>
 
