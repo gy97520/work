@@ -41,6 +41,9 @@
         }
       }
     },
+    created(){
+    this.getUrl();
+    },
     watch:{
       '$route':'getUrl'
     }
