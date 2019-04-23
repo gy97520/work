@@ -8,7 +8,7 @@ import axios from 'axios';
 import 'element-ui/lib/theme-chalk/index.css';
 import fun from './jiekou.js';
 import img from '../src/assets/images/index.js'
-import preview from 'vue-photo-preview'
+import preview from 'vue-photo-preview';
 import 'vue-photo-preview/dist/skin.css'
 import $ from 'jquery'
 import animated from 'animate.css'
@@ -16,12 +16,14 @@ import '../src/assets/css/common.css'
 import 'vue-awesome/icons'
 import Icon from 'vue-awesome/components/Icon'
 
+
 Vue.config.productionTip = false;
 
 
 Vue.use(ElementUI);
 Vue.use(preview)
 Vue.use(animated)
+
 
 Vue.component('icon',Icon)
 
