@@ -2,6 +2,18 @@
   <div>
 <div class="culture">
 <!--  <vue-waterfall-easy :imgsArr="imgsArr" @scrollLoadImg="fetchImgsData"></vue-waterfall-easy>-->
+  <h4 style="text-align: center">资质荣誉</h4>
+  <article class="jq22-container" >
+    <div class="content">
+      <div class="chroma-gallery mygallery"  >
+        <img :src="item" alt="Pic 1" v-for="(item,index) in imgsArr" data-largesrc="zheng/m1.jpg" >
+
+      </div>
+    </div>
+
+  </article>
+
+
 
 </div>
 </div>
@@ -9,12 +21,24 @@
 
 <script>
   import vueWaterfallEasy from 'vue-waterfall-easy'
+  import $ from 'jquery'
     export default {
       components: {
         vueWaterfallEasy
       },
       that:this,
       name: "enterprise qualification",
+
+  mounted()
+  {
+    $(".mygallery").chromaGallery ({
+      color: '#000',
+      gridMargin: 15,
+      maxColumns: 5,
+      dof: true,
+      screenOpacity: 0.8
+    });
+  },
    /*   props: {
         gap: { // 图片间隔
           type: Number,
@@ -40,7 +64,7 @@
       },*/
       data () {
         return {
-          imgsArr: [this.$img.m1,this.$img.m2, this.$img.m3], //存放所有已加载图片的数组（即当前页面会加载的所有图片）
+          imgsArr: [this.$img.m1,this.$img.m2, this.$img.m3, this.$img.m4, this.$img.m5, this.$img.m6,this.$img.m7,this.$img.m8,this.$img.m9,this.$img.m10], //存放所有已加载图片的数组（即当前页面会加载的所有图片）
           fetchImgsArr: [] //存放每次滚动时下一批要加载的图片的数组
         }
       },
@@ -56,5 +80,26 @@
 </script>
 
 <style scoped>
+/*img{
+  width: 200px;
+}*/
+img{
+  width:200px;
 
+}
+.content
+{
+  width:100%;
+  height: 100%;
+  margin: 10px auto;
+}
+@media screen and (min-width: 980px) /* Desktop */ {
+  .content {
+    width: 100%;
+  }
+}
+.mygallery
+{
+  margin: 15px auto;
+}
 </style>
