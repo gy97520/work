@@ -5,7 +5,7 @@
       <div class="left_nav" style="float: left">
         <h2>业务体系</h2>
         <ul class="lefu">
-          <router-link :to="item.eName" tag="li" v-for="item in comnav[curKey]"><a>{{item.name}}</a></router-link>
+          <router-link :to="item.eName" tag="li" v-for="item in comnav[curKey]" :key="index"><a>{{item.name}}</a></router-link>
         </ul>
 
       </div>

@@ -1,20 +1,15 @@
 <template>
   <div>
 <div class="culture">
-<!--  <vue-waterfall-easy :imgsArr="imgsArr" @scrollLoadImg="fetchImgsData"></vue-waterfall-easy>-->
-  <h4 style="text-align: center">资质荣誉</h4>
+  <br>
+  <div style="text-align: center;font-size: 20px;font-weight: 700">资质荣誉</div>
   <article class="jq22-container" >
     <div class="content">
-      <div class="chroma-gallery mygallery"  >
-        <img :src="item" alt="Pic 1" v-for="(item,index) in imgsArr" data-largesrc="zheng/m1.jpg"  :preview="index" :preview-text="'描述文字'+index" >
-
+      <div class="chroma-gallery mygallery">
+        <img :src="item" alt="Pic 1" v-for="(item,index) in imgsArr" data-largesrc="zheng/m1.jpg"  :preview="index" :preview-text="'描述文字'+index" style="margin-left: 20px">
       </div>
     </div>
-
   </article>
-
-
-
 </div>
 </div>
 </template>
@@ -28,7 +23,6 @@
       },
       that:this,
       name: "enterprise qualification",
-
   mounted()
   {
     $(".mygallery").chromaGallery ({
