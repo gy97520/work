@@ -1,7 +1,9 @@
 <template>
     <div class="culture">
       <br>
+      <br>
       <div style="text-align: center;font-size: 20px;font-weight: 700">人才招聘</div>
+      <br>
       <br>
 <div style="width: 87%;margin: 0 auto">
       <el-collapse v-model="activeName" accordion >

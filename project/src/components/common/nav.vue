@@ -1,13 +1,12 @@
 <template>
-    <div class="" >
+    <div >
       <Header />
       <div style="margin: 0 auto;width:87%;" class="clearfix">
       <div class="left_nav" style="float: left">
-        <h2>业务体系</h2>
+        <h2 v-for="item in tit[titKey]">{{item.title}}</h2>
         <ul class="lefu">
-          <router-link :to="item.eName" tag="li" v-for="item in comnav[curKey]" :key="index"><a>{{item.name}}</a></router-link>
+          <router-link :to="item.eName" tag="li" active-class="active" v-for="item in comnav[curKey]" :key="index"><a>{{item.name}}</a></router-link>
         </ul>
-
       </div>
       <div class="right_nav" style="float: left;width:50%;">
       <router-view></router-view>
@@ -35,6 +34,7 @@
                 {name: "资质荣誉", eName: "enterpriseQualification"},
                 {name: "管理团队", eName: "managementTeam"},
                 {name: "团队风采", eName: "teamStyle"},
+                {a:"nihao"},
               ],
               yewu: [
                 {name: "业务领域", eName: "businessArea"},
@@ -44,10 +44,22 @@
                 {name: "技术支持", eName: "solution"},
               ],
               zhaoxian: [
-                {name: "招贤纳士", eName: "employ"},
+                {name: "人才招聘", eName: "employ"},
               ],
             },
             curKey:'zoujin',
+            tit:{
+              zoujin: [
+                {title:"走进聚而禾"},
+              ],
+              yewu: [
+                {title:"业务领域"},
+              ],
+              zhaoxian: [
+                {title:"招贤纳士"},
+              ],
+            },
+            titKey:'zoujin',
           }
       },
       methods:{
@@ -59,12 +71,12 @@
             case '/ManagementTeam':
             case '/organizationChart':
             case '/enterpriseQualification':
-            case '/teamStyle':this.curKey='zoujin';break;
+            case '/teamStyle':this.curKey='zoujin';this.titKey='zoujin';break;
             case '/businessArea':
             case '/projectResult':
             case '/resultShow':
-            case '/solution':this.curKey='yewu';break;
-            case '/employ':this.curKey='zhaoxian';break;
+            case '/solution':this.curKey='yewu';this.titKey='yewu';break;
+            case '/employ':this.curKey='zhaoxian';this.titKey='zhaoxian';break;
 
           }
         }
