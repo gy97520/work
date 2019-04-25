@@ -1,6 +1,6 @@
 <template>
   <div class="bannerHover" :style="{backgroundImage:`url(${back})`}">
-    <Sheader />
+    <Sheader></Sheader>
   </div>
 </template>
 <script>
@@ -20,7 +20,6 @@
     methods: {
       getUrl(){
         let path = this.$route.path;
-        console.log(path);
         switch (path) {
           case '/companyProfile':
           case '/companyCulture':

@@ -67,7 +67,7 @@
 <script>
   import $ from 'jquery'
     export default {
-      name: "business area",
+      name: "businessArea",
       mounted(){
         $(".hit1").on("mouseenter",function() {
 

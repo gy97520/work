@@ -16,7 +16,7 @@
 
 <script>
     export default {
-        name: "company culture",
+        name: "companyCulture",
 
     }
 </script>

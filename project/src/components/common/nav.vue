@@ -1,6 +1,6 @@
 <template>
     <div >
-      <Header />
+      <Header></Header>
       <div style="margin: 0 auto;width:87%;" class="clearfix">
       <div class="left_nav" style="float: left">
         <h2 v-for="item in tit[titKey]">{{item.title}}</h2>
@@ -20,7 +20,6 @@
   import  Header from './header'
     export default {
         name: "nav",
-        tex:"A",
       components:{
         Header,
       },
@@ -90,10 +89,7 @@
 </script>
 
 <style scoped>
-.active{
-  color:red;
 
-}
   .left_nav h2{
     font-size: 22px;
     height: 70px;
@@ -137,8 +133,5 @@
   .lefu li a:hover{
     text-decoration: none;
   }
-  .active{
-    color: red !important;
-    background:#f1ecec85  !important;
-  }
+
 </style>

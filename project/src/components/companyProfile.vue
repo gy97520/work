@@ -29,7 +29,7 @@
 
 <script>
     export default {
-        name: "company profile",
+        name: "companyProfile",
 
     }
 </script>

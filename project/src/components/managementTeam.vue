@@ -81,30 +81,5 @@
     margin-left: 20px;
     margin-right: 20px;
   }
-/*  .tx-float img {
-    width: 300px;
-    height: 360px;
-    margin-right: 15px;
-    cursor: default;
-  }
-  .tx-team li {
-    float: left;
-    margin-left: 70px;
-  }
-  .tx-team1 input{
-    width:90px;
-    height:40px;
-  }
-  .text h3 {
-    position: relative;
-    top: -78px;
-    left: 0px;
-    width: 300px;
-    color: black;
-    height: 55px;
-    line-height: 55px;
-    background: #eeeeeee3;
-    text-align: center;
-    cursor: default;
-  }*/
+
 </style>

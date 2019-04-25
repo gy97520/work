@@ -24,7 +24,7 @@
         vueWaterfallEasy
       },
       that:this,
-      name: "enterprise qualification",
+      name: "enterpriseQualification",
   mounted()
   {
     $(".mygallery").chromaGallery ({

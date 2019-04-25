@@ -80,20 +80,7 @@
                 selectTar:0
             }
         },
-        methods: {
-            monitorRouter() {
-                window.scrollTo(0, 0);
-            },
 
-        },
-        mounted() {
-            this.monitorRouter();
-            this.that = this;
-
-        },
-        watch: {
-            '$route': 'monitorRouter'
-        },
     }
 </script>
 

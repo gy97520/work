@@ -87,10 +87,6 @@ ul li{
   color:pink !important;
 }
 
-/*.el-menu--horizontal .el-submenu .el-menu-item.is-active{
-  color: #ff7820;
-}*/
-.active{color: red}
 .logo{
   float: left;
   margin-right:260px;
@@ -135,6 +131,5 @@ ul li{
 }
 .is-active{
   color: green
-
 }
 

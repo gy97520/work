@@ -6,14 +6,14 @@
     >
       <div class="logo"><img src="../../assets/images/comindex/logo_white.png" style="width:80%;margin-left: 158px;"/></div>
       <el-menu-item index="1"  @click="that.$jk.getDescribe('/')">首页</el-menu-item>
-      <el-submenu index="2"  >
-        <template slot="title">走进聚而禾</template>
-        <router-link tag="el-menu-item" :index="'1-'+index"  v-for="(item,index) in oneDetail " :key="index"  :to="{path:'/'+item.addres}" >{{item.value}}</router-link>
+      <el-submenu index="2"   >
+        <template slot="title"  :class="{ act: isActive }">走进聚而禾</template>
+        <router-link tag="el-menu-item"  @click="goto" :index="'2-'+index"  v-for="(item,index) in oneDetail " :key="index"  :to="{path:'/'+item.addres}" >{{item.value}}</router-link>
 
       </el-submenu>
       <el-submenu index="3">
         <template slot="title">业务体系</template>
-        <router-link tag="el-menu-item" :index="'2-'+index"  v-for="(item,index) in twoDetail " :key="index"  :to="{path:'/'+item.addres}" >{{item.value}}</router-link>
+        <router-link tag="el-menu-item" :index="'3-'+index"  v-for="(item,index) in twoDetail " :key="index"  :to="{path:'/'+item.addres}" >{{item.value}}</router-link>
       </el-submenu>
       <el-menu-item index="4" @click="that.$jk.getDescribe('/employ')">招贤纳士</el-menu-item>
       <el-menu-item index="5" @click="that.$jk.getDescribe('/contact')">联系我们</el-menu-item>
@@ -25,12 +25,13 @@
 
 <script>
   export default {
-    name: "s_header",
+    name: "sheader",
     data() {
       return {
 
         listData: [],
         that:this,
+        isActive:false,
         oneDetail: [
           {value: '公司简介',addres:'companyProfile'},
           {value: '公司文化',addres:'companyCulture'},
@@ -50,8 +51,17 @@
 
       }
     },
-
+    methods:{
+      goto(){
+        alert("ok")
+        this.isActive=true;
+      }
+    }
   }
 </script>
 
-
+<style scoped>
+ .act{
+    color:red !important;
+  }
+</style>

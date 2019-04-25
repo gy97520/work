@@ -97,7 +97,7 @@
     export default {
         name: "index",
         components:{
-        Sheader
+        Sheader,
         },
       data(){
           return{
@@ -160,7 +160,6 @@
     background-color: #1fa67a !important;
   }
   .rrred{
-
     background-color:#95ccba !important;
   }
 
