@@ -5,7 +5,7 @@
       <div class="left_nav" style="float: left">
         <h2 v-for="item in tit[titKey]">{{item.title}}</h2>
         <ul class="lefu">
-          <router-link :to="item.eName" tag="li" active-class="active" v-for="item in comnav[curKey]" :key="index"><a>{{item.name}}</a></router-link>
+          <router-link :to="item.eName"  tag="li" exact v-for="item in comnav[curKey]" :key="index"><a>{{item.name}}</a></router-link>
         </ul>
       </div>
       <div class="right_nav" style="float: left;width:50%;">
@@ -91,7 +91,10 @@
 </script>
 
 <style scoped>
+.active{
+  color:red;
 
+}
   .left_nav h2{
     font-size: 22px;
     height: 70px;

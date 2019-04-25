@@ -87,9 +87,10 @@ ul li{
   color:pink !important;
 }
 
-.el-menu--horizontal .el-submenu .el-menu-item.is-active{
+/*.el-menu--horizontal .el-submenu .el-menu-item.is-active{
   color: #ff7820;
-}
+}*/
+.active{color: red}
 .logo{
   float: left;
   margin-right:260px;
@@ -125,3 +126,11 @@ ul li{
   padding-left: 20px !important;
   font-size:15px;
 }
+.router-link-exact-active{
+  color: green !important;
+}
+.router-link-exact-active a{
+  color: green !important;
+  background: black;
+}
+
