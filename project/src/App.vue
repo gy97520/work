@@ -26,5 +26,9 @@ import  Footer from './components/common/footer'
     width:100%;
     height: 100%;
   }
+  .active{
+    color:red;
+
+  }
 </style>
 
