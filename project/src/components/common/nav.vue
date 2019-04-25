@@ -34,7 +34,6 @@
                 {name: "资质荣誉", eName: "enterpriseQualification"},
                 {name: "管理团队", eName: "managementTeam"},
                 {name: "团队风采", eName: "teamStyle"},
-                {a:"nihao"},
               ],
               yewu: [
                 {name: "业务领域", eName: "businessArea"},
@@ -53,7 +52,7 @@
                 {title:"走进聚而禾"},
               ],
               yewu: [
-                {title:"业务领域"},
+                {title:"业务体系"},
               ],
               zhaoxian: [
                 {title:"招贤纳士"},
@@ -134,5 +133,9 @@
   }
   .lefu li a:hover{
     text-decoration: none;
+  }
+  .active{
+    color: red !important;
+    background:#f1ecec85  !important;
   }
 </style>
