@@ -131,6 +131,10 @@ ul li{
 }
 .router-link-exact-active a{
   color: green !important;
-  background: black;
+  background: #e6e6e6;
+}
+.is-active{
+  color: green
+
 }
 
