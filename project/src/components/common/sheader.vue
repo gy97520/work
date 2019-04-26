@@ -7,8 +7,8 @@
       <div class="logo"><img src="../../assets/images/comindex/logo_white.png" style="width:80%;margin-left: 158px;"/></div>
       <el-menu-item index="1"  @click="that.$jk.getDescribe('/')">首页</el-menu-item>
       <el-submenu index="2"   >
-        <template slot="title"  :class="{ act: isActive }">走进聚而禾</template>
-        <router-link tag="el-menu-item"  @click="goto" :index="'2-'+index"  v-for="(item,index) in oneDetail " :key="index"  :to="{path:'/'+item.addres}" >{{item.value}}</router-link>
+        <template slot="title">走进聚而禾</template>
+        <router-link tag="el-menu-item"  :index="'2-'+index"  v-for="(item,index) in oneDetail " :key="index"  :to="{path:'/'+item.addres}" >{{item.value}}</router-link>
 
       </el-submenu>
       <el-submenu index="3">
@@ -52,10 +52,7 @@
       }
     },
     methods:{
-      goto(){
-        alert("ok")
-        this.isActive=true;
-      }
+
     }
   }
 </script>
