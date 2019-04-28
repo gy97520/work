@@ -35,7 +35,7 @@
             this.back=require("../../assets/images/comHeader/bg2.jpg");
             break;
           case '/employ':
-            this.back=require("../../assets/images/comHeader/bg7.jpg");
+            this.back=require("../../assets/images/comHeader/bg.jpg");
             break;
         }
       }

@@ -94,6 +94,11 @@ mode: 'history',
 
     },
     {
+      path: '/oneNew',
+      name:"oneNew",
+      component: resolve => require(['@/components/news/oneNew'], resolve),
+    },
+    {
       path: '/contact',
       component: resolve => require(['@/components/contact'], resolve),
 

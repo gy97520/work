@@ -11,7 +11,7 @@
           <img :src="item.img"  style="margin-top:20px;">
         </span>
         <span class="text">
-          <h3 style="background: #eeeeeee3">{{item.tit}}</h3>
+          <h3 style="background:rgba(228, 228, 228, 0.67)">{{item.tit}}</h3>
         </span>
       </li>
 
@@ -86,7 +86,7 @@
   }
   .text h3 {
     position: relative;
-    top: -78px;
+    top: -77px;
     left: 0px;
     width: 300px;
     color: black;
