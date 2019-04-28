@@ -1,10 +1,10 @@
 <template>
-  <div id="searchBar" style="position: fixed;top: 0;left:120px;z-index: 10000;width: 87.4%;">
+  <div id="searchBar" style="position: fixed;top: 0;left:124px;z-index: 10000;width: 87%;">
     <el-menu
       class="el-menu-demo"
       mode="horizontal"
     >
-      <div class="logo"><img src="../../assets/images/comindex/logo_white.png" style="width:80%;margin-left: 158px;"/></div>
+      <div class="logo"><img src="../../assets/images/comindex/logo.png"></div>
       <el-menu-item index="1"  @click="that.$jk.getDescribe('/')">首页</el-menu-item>
       <el-submenu index="2"   >
         <template slot="title">走进聚而禾</template>
@@ -51,9 +51,11 @@
 
       }
     },
+    created(){
+      document.querySelector('#searchBar').style.background = 'transparent';
+    },
     mounted() {//给window添加一个滚动滚动监听事件
-      window.addEventListener('scroll', this.handleScroll1, true),
-      window.addEventListener('scroll', this.handleScroll2, true)
+      window.addEventListener('scroll', this.handleScroll);
     },
     methods: {
 
@@ -73,6 +75,7 @@
             document.querySelector('#searchBar').style.background = '#00000036';
             break;
         }
+
       },
       navUrl2() {
         let path = this.$route.path;
@@ -82,9 +85,8 @@
             break;
         }
       },
-      handleScroll1() { //改变元素#searchBar的top值
+      handleScroll() { //改变元素#searchBar的top值
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-        console.log(scrollTop);
         if (scrollTop < 214) {
           document.querySelector('#searchBar').style.background = 'transparent';
         }
@@ -96,13 +98,12 @@
           document.querySelector('#searchBar').style.background = '#00000036';
         }
       },
-      destroyed() {//离开该页面需要移除这个监听的事件
-        window.removeEventListener('scroll', this.handleScroll1);
+
+     destroyed() {//离开该页面需要移除这个监听的事件
+        window.removeEventListener('scroll', this.handleScroll);
       },
     },
-    watch:{
-      '$route':'navUrl1',
-    }
+
   }
 </script>
 

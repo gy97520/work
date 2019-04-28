@@ -1,7 +1,7 @@
 <template>
 <div>
   <Sheader></Sheader>
-  <div class="s_header" style="width: 87.5%;margin: 0 auto">
+  <div class="s_header" style="width: 87%;margin: 0 auto">
     <el-carousel :interval="8000" arrow="always" height='500px' >
       <el-carousel-item v-for="item in carousel_img" :key="item" style="width: 100%"  height="600px"  >
         <img :src="item" alt="" style="width: 100%;"  height="600px" >
@@ -84,7 +84,7 @@
     </el-row>
     <el-row>
       <br>
-     <input type="button" value="查看更多" style="width:150px;height:50px;border:2px solid black;background:transparent;margin-left:1315px;font-weight: 700;">
+     <input type="button" value="查看更多" @click="that.$jk.getDescribe('/businessArea')" style="width:150px;height:50px;border:2px solid black;background:transparent;margin-left:1315px;font-weight: 700;">
     </el-row>
 
   </div>
