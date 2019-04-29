@@ -62,6 +62,7 @@
       navUrl1() {
         let path = this.$route.path;
         switch (path) {
+          case '/oneNew':
           case '/companyProfile':
           case '/companyCulture':
           case '/managementTeam':

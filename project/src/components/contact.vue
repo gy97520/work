@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="conta" >
+      <Sheader></Sheader>
         <div class="header-title" style="text-align: center;padding-top:300px;padding-left: 80px;text-shadow: 1px 1px 1px rgba(16,16,16,0.8);line-height: 30px">
           <h1 style="font-size: 30px;font-weight: 700">CONTACT US</h1>
           <h2 class="h2" >联系我们</h2>
@@ -13,8 +14,12 @@
 </template>
 
 <script>
+  import Sheader from './common/sheader';
     export default {
-        name: "contact"
+        name: "contact",
+      components:{
+        Sheader,
+      },
     }
 </script>
 
