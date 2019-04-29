@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div :style="{backgroundImage:`url(${news})`}" style="width:80%;height:300px;margin: 0 auto;background-position:0 -185px;">
+    <div :style="{backgroundImage:`url(${news})`}" style="width:87%;height:300px;margin: 0 auto;background-position:0 -185px;">
       <Sheader></Sheader>
     </div>
  <div style="width: 67%;margin: 0 auto;">
