@@ -27,15 +27,15 @@
           case '/organizationChart':
           case '/enterpriseQualification':
           case '/team style':
-            this.back=require("../../assets/images/comHeader/bg1.jpg");
+            this.back=require("../../assets/images/comHeader/bg23.png");
             break;
           case '/businessArea':
           case '/projectResult':
           case '/solution':
-            this.back=require("../../assets/images/comHeader/bg2.jpg");
+            this.back=require("../../assets/images/comHeader/bg22.jpg");
             break;
           case '/employ':
-            this.back=require("../../assets/images/comHeader/bg10.jpg");
+            this.back=require("../../assets/images/comHeader/bg24.jpg");
             break;
         }
       }

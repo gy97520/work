@@ -110,8 +110,10 @@ ul li{
   margin-right: 20px;
 }
 .conta{
+  width:87%;
+  margin: 0 auto;
   background-image: url("../images/contact.jpg ");
-  height:960px;
+  height:800px;
 }
 /*资质荣誉*/
 .el-collapse-item__header {

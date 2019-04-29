@@ -1,7 +1,7 @@
 const url='http://mumueaszen.qimutech.cn/image/';
 
 export default{
-  slide1:require ('./comindex/slide1.jpg'),
+  slide:require ('./comindex/slide.jpg'),
   slide2:require ('./comindex/slide2.jpg'),
   slide3:require ('./comindex/slide3.jpg'),
 

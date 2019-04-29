@@ -190,7 +190,7 @@
     left: 0;
     padding-left: 5px;
     color: white;
-    background-color: rgba(0, 0, 0, 0.21);
+    background-color:rgba(0, 0, 0, 0.4);
 
   }
   .share_txt1-1 p{
