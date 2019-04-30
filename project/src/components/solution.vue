@@ -3,7 +3,7 @@
 
   <div class="container" style="float: left;width: 1303px;margin-left: 50px;height:590px;overflow-y: scroll;">
     <div class="row">
-      <h2 style="font-size:24px;font-weight:700;">土地二级市场网上交易平台</h2>
+      <h2 style="font-size:24px;font-weight:700;text-align: center">土地二级市场网上交易平台</h2>
       <br>
       <div style="margin-bottom: 100px">
         <p>
