@@ -4,7 +4,7 @@
   <div class="culture">
     <br>
     <div style="float: left;margin-right: 30px;">
-      <img src="../assets/images/comindex/bj.jpg" style="width:450px;height:300px;" class="img-responsive" />
+      <img src="../assets/images/comindex/companyProfile.jpg" style="" class="img-responsive" />
     </div>
     <div style="margin-right: 30px;">
       <div >

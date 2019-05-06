@@ -16,7 +16,7 @@ ul li{
   list-style: none;
 }
 .container{
-  width:87%;
+  width:1180px;
   margin: 0 auto;
 
 }
@@ -31,15 +31,15 @@ ul li{
 }
 .culture{
   background: url("../images/comHeader/bg8.jpg") center top no-repeat;
-  width: 1338px;
+  width:863px;
   height: 587px;
   margin-left: 15px;
   margin-bottom: 6px;
 }
-.bannerHover{
-  width:87%;
+/*.bannerHover{
+  width:1500px;
   margin: 0 auto;
-}
+}*/
 .bannerHover1{
   background-image: url("../images/comHeader/bg1.jpg ");
   z-index: 200;
@@ -92,7 +92,8 @@ ul li{
 }
 .logo img{
   width: 500px;
-  margin: -20px 260px 0 200px;
+/*  margin: -20px 260px 0 200px;*/
+  margin: -13px 100px 0 40px;
 }
 .news li a{
   overflow: hidden;
@@ -110,10 +111,10 @@ ul li{
   margin-right: 20px;
 }
 .conta{
-  width:87%;
+  width:870px;
   margin: 0 auto;
-  background-image: url("../images/contact.jpg ");
-  height:800px;
+  background: red;
+  height:594px;
 }
 /*资质荣誉*/
 .el-collapse-item__header {

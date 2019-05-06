@@ -5,7 +5,7 @@
   <br>
   <div style="text-align: center;font-size: 20px;font-weight: 700;">资质荣誉</div>
   <br>
-  <article class="jq22-container" >
+  <article class="jq22-container" style="height:460px;overflow-y: scroll;padding-left: 95px;" >
     <div class="content">
       <div class="chroma-gallery mygallery">
         <img :src="item" alt="Pic 1" v-for="(item,index) in imgsArr" data-largesrc="zheng/m1.jpg"  :preview="index" :preview-text="'描述文字'+index" style="margin-left: 20px;margin-bottom:20px">

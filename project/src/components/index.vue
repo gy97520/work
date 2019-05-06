@@ -1,9 +1,9 @@
 <template>
 <div>
   <Sheader></Sheader>
-  <div class="s_header" style="width: 87%;margin: 0 auto">
+  <div class="s_header" style="width:1500px;margin: 0 auto">
     <el-carousel :interval="8000" arrow="always" height='500px' >
-      <el-carousel-item v-for="item in carousel_img" :key="item" style="width: 100%"  height="600px"  >
+      <el-carousel-item v-for="item in carousel_img" :key="item" style="width: 100%"  >
         <img :src="item" alt="" style="width: 100%;"  height="600px" >
       </el-carousel-item>
     </el-carousel>
@@ -12,17 +12,17 @@
 
     <div class="row" style="height:30px;"></div>
     <el-row>
-      <el-col :span="1" >
+    <!--  <el-col :span="1" >
 &nbsp;
-      </el-col>
-      <el-col :span="5" >
+      </el-col>-->
+      <el-col :span="6" >
         <div>
-          <img src="../assets/images/comindex/jianjie.jpg" height="345px" width="350px">
+          <img src="../assets/images/comindex/jianjie.jpg" height="345px" width="300px">
         </div>
       </el-col>
-      <el-col :span="7">
-        <div  style="padding-left:20px;">
-          <h2 style="text-align: center">公司简介</h2>
+      <el-col :span="8">
+        <div  style="padding-left:30px;">
+          <div style="text-align: center;font-weight: 700;font-size:22px;">公司简介</div>
           <p style="color:rgb(152, 152, 152);text-align: center">Company profile</p>
           <div  style="margin:0 20px 12px 0;">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{this.text}}
@@ -30,6 +30,9 @@
 
         </div>
       </el-col>
+     <!-- <el-col :span="1" >
+        &nbsp;
+      </el-col>-->
       <el-col :span="3" >
         <div style="background:rgba(0, 90, 142, 0.43);padding-left: 30px;color:white;font-size:16px;">
           <br><br>
@@ -56,7 +59,7 @@
     </el-row>
     <el-row>
 
-      <el-col style="text-align: center;background:#bbbbbb6e;margin:30px 0 30px 0;">
+      <el-col style="text-align: center;background:rgba(187, 187, 187, 0.15);margin-top: 20px">
 
         <h2>业务领域</h2>
         <p>{{num}}</p>
@@ -84,7 +87,8 @@
     </el-row>
     <el-row>
       <br>
-     <input type="button" value="查看更多" @click="that.$jk.getDescribe('/businessArea')" style="width:150px;height:50px;border:2px solid black;background:transparent;margin-left:1315px;font-weight: 700;">
+     <input type="button" value="查看更多" @click="that.$jk.getDescribe('/businessArea')" style="width:150px;height:50px;border:2px solid black;background:transparent;margin-left:815px;font-weight: 700;">
+
     </el-row>
 
   </div>

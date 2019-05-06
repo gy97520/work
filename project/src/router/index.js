@@ -6,7 +6,7 @@ Vue.use(Router)
 
 export default new Router({
   linkActiveClass:"active",
-mode: 'history',
+/*mode: 'history',*/
   routes: [
     {
       path: '/',
@@ -86,6 +86,11 @@ mode: 'history',
               name:"employ",
               component: resolve => require(['@/components/employ'], resolve),
            },
+           {
+             path: '/contact',
+             component: resolve => require(['@/components/contact'], resolve),
+
+           },
       ]
     },
     {
@@ -98,10 +103,6 @@ mode: 'history',
       name:"oneNew",
       component: resolve => require(['@/components/news/oneNew'], resolve),
     },
-    {
-      path: '/contact',
-      component: resolve => require(['@/components/contact'], resolve),
 
-    },
       ]
 })

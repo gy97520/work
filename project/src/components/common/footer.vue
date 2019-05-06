@@ -104,7 +104,7 @@
         height: 300px;
         color: white;
         padding-top: 50px;
-        width:87%;
+        width:1180px;
         font-size: 0.8em;
         background:#1a1a1a;
         margin: 0 auto;

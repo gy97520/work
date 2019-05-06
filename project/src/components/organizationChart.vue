@@ -3,7 +3,7 @@
     <br>
     <div style="text-align: center;font-size: 20px;font-weight: 700">组织架构</div>
     <br>
-    <img src="../assets/images/comHeader/chart.jpg" style="width: 1000px;height:450px;margin-left:170px">
+    <img src="../assets/images/comHeader/chart.jpg" style="width:840px;height:450px;">
 
   </div>
 </template>

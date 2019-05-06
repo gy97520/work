@@ -16,7 +16,6 @@
         back:require("../../assets/images/comHeader/bg1.jpg")
       }
     },
-
     methods: {
       getUrl(){
         let path = this.$route.path;
@@ -27,15 +26,18 @@
           case '/organizationChart':
           case '/enterpriseQualification':
           case '/team style':
-            this.back=require("../../assets/images/comHeader/bg23.png");
-            break;
+                  this.back=require("../../assets/images/comHeader/bg23.png");
+                  break;
           case '/businessArea':
           case '/projectResult':
           case '/solution':
-            this.back=require("../../assets/images/comHeader/bg22.jpg");
-            break;
+                  this.back=require("../../assets/images/comHeader/bg22.jpg");
+                  break;
           case '/employ':
-            this.back=require("../../assets/images/comHeader/bg24.jpg");
+                  this.back=require("../../assets/images/comHeader/bg24.jpg");
+                  break;
+          case '/contact':
+            this.back=require("../../assets/images/comHeader/bg26.jpg");
             break;
         }
       }
@@ -46,14 +48,14 @@
     watch:{
       '$route':'getUrl'
     }
-
   }
 </script>
 
 <style scoped>
   .bannerHover{
-    width:87%;
-    height:300px;
+    width:1500px;
+    min-height:300px;
+    margin: 0 auto;
   }
 </style>
 

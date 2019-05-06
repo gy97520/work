@@ -1,8 +1,8 @@
 <template>
-  <div class="culture">
+  <div class="culture" style="overflow-y: scroll;overflow-x: hidden">
     <br>
     <div style="text-align: center;font-size: 20px;font-weight: 700">业务领域</div>
-    <div class="row share" style="margin-left: 33px;">
+    <div class="row share">
       <ul>
         <li class="hit1"><img src="../assets/images/project result/cehui2.jpg"/>
           <div class="cen1">
@@ -35,7 +35,7 @@
         </li>
       </ul>
     </div>
-    <div class="row share" style="margin-left: 33px;">
+    <div class="row share">
       <ul>
         <li class="hit4"><img src="../assets/images/business area/ggzc1.jpg"/>
           <div class="cen1">
@@ -149,11 +149,12 @@
   .share{
     text-align: center;
     height: 259px;
+    margin-left: -57px;
 
   }
   .share ul{
     list-style: none;
-    width: 1400px;
+    width:870px;
     height: 300px;
     text-align: center;
     margin: 0 auto;
@@ -162,11 +163,11 @@
     float: left;
     width: 400px;
     height: 200px;
-    margin-left: 0px;
     text-align: left;
-    padding-left: 0px;
+    margin-bottom:49px;
     padding-top: 20px;
     font-size: 13px;
+    margin-left: 32px;
   }
   .share ul li img{
     float: left;
