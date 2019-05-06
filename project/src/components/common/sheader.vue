@@ -1,5 +1,6 @@
 <template>
-  <div id="searchBar" style="position: fixed;top: 0;left:360px;z-index: 10000;width:1180px;margin: 0 auto">
+
+  <div id="searchBar" style="position: fixed;top:0;left:50%;z-index: 10000;width:1180px;margin: 0 0 0 -590px">
     <el-menu
       class="el-menu-demo"
       mode="horizontal"
