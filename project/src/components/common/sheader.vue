@@ -1,5 +1,5 @@
 <template>
-  <div id="searchBar" style="position: fixed;top: 0;left:355px;z-index: 10000;width:1180px;margin: 0 auto">
+  <div id="searchBar" style="position: fixed;top: 0;left:360px;z-index: 10000;width:1180px;margin: 0 auto">
     <el-menu
       class="el-menu-demo"
       mode="horizontal"
@@ -73,6 +73,7 @@
           case '/projectResult':
           case '/solution':
           case '/employ':
+          case '/contact':
             document.querySelector('#searchBar').style.background = '#00000036';
             break;
         }
