@@ -30,16 +30,14 @@
 
         </div>
       </el-col>
-     <!-- <el-col :span="1" >
-        &nbsp;
-      </el-col>-->
+
       <el-col :span="3" >
         <div style="background:rgba(0, 90, 142, 0.43);padding-left: 30px;color:white;font-size:16px;">
           <br><br>
           <p>NEWS</p>
           <h3>新闻动态</h3>
           <div style="margin-top: -23px;">_____</div>
-          <div  style="color: white;margin-top:146px;" @click="that.$jk.getDescribe('/moreNews')">MORE+</div>
+          <div  style="color: white;margin-top:146px;cursor:pointer" @click="that.$jk.getDescribe('/moreNews')">MORE+</div>
           <br><br>
         </div>
       </el-col>

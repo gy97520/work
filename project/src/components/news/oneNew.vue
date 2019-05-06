@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div :style="{backgroundImage:`url(${news})`}" style="width:87%;height:300px;margin: 0 auto;background-position:0 -185px;">
+    <div :style="{backgroundImage:`url(${news})`}" style="width:1500px;height:300px;margin: 0 auto;background-position:0 -185px;">
       <Sheader></Sheader>
     </div>
- <div style="width: 67%;margin: 0 auto;">
+ <div style="width: 1180px;margin: 0 auto;">
         <h2 style="text-align: center">天津市武清区土地二级市场试点项目顺利通过部级验收</h2>
         <div style="margin-bottom:50px">
           <p>9月3日，杭州聚而禾规划有限公司承担的天津市武清区完善建设用地使用权转让、出租、抵押二级市场试点项目部级验收工作在北京举行，自然资源部会同财政部、住建部、农业农村部、中国人民银行、银保监会等部委相关司局和事业单位，邀请部分高校专家，组成验收工作组，听取了武清区试点工作情况汇报。验收组认为天津武清较好地完成了试点各项计划任务，一致同意通过验收。
