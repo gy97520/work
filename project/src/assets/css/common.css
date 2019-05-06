@@ -41,7 +41,7 @@ ul li{
   margin: 0 auto;
 }*/
 .bannerHover1{
-  background-image: url("../images/comHeader/bg1.jpg ");
+  /*background-image: url("../images/comHeader/bg1.jpg ");*/
   z-index: 200;
 }
 /**/
@@ -114,7 +114,7 @@ ul li{
   width:870px;
   margin: 0 auto;
   background: red;
-  height:594px;
+  height:580px;
 }
 /*资质荣誉*/
 .el-collapse-item__header {

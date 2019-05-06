@@ -1,9 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-
-
 Vue.use(Router)
-
 export default new Router({
   linkActiveClass:"active",
 /*mode: 'history',*/
@@ -78,7 +75,7 @@ export default new Router({
             },
            {
               path: '/solution',
-              name:"team style",
+              name:"teamStyle",
               component: resolve => require(['@/components/solution'], resolve),
             },
             {

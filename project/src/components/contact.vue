@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="culture">
-     <!-- <Sheader></Sheader>-->
         <div  style="width:450px;margin:0 auto;padding-top: 200px;">
           <div>
             <icon name="map-marker" scale="1" style="color:orangered"></icon>
@@ -25,12 +24,8 @@
 </template>
 
 <script>
-  import Sheader from './common/sheader';
     export default {
         name: "contact",
-      components:{
-        Sheader,
-      },
     }
 </script>
 

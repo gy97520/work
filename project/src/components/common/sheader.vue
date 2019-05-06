@@ -68,7 +68,7 @@
           case '/managementTeam':
           case '/organizationChart':
           case '/enterpriseQualification':
-          case '/team style':
+          case '/teamStyle':
           case '/businessArea':
           case '/projectResult':
           case '/solution':

@@ -13,7 +13,7 @@
     data() {
       return {
         that:this,
-        back:require("../../assets/images/comHeader/bg1.jpg")
+        back:require("../../assets/images/comHeader/bg22.jpg")
       }
     },
     methods: {
@@ -25,7 +25,7 @@
           case '/managementTeam':
           case '/organizationChart':
           case '/enterpriseQualification':
-          case '/team style':
+          case '/teamStyle':
                   this.back=require("../../assets/images/comHeader/bg23.png");
                   break;
           case '/businessArea':
