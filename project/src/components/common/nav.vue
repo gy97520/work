@@ -39,7 +39,7 @@
                 {name: "项目成果", eName: "projectResult"},
                 {name: "产品展示", eName: "productShow"},
                 {name: "解决方案", eName: "solution"},
-                {name: "技术支持", eName: "solution"},
+                {name: "技术支持", eName: "technicalSupport"},
               ],
              employ: [
                 {name: "人才招聘", eName: "employ"},
@@ -79,6 +79,7 @@
             case '/businessArea':
             case '/projectResult':
             case '/resultShow':
+            case '/technicalSupport':
             case '/solution':this.curKey='business';this.titKey='business';break;
             case '/employ':this.curKey='employ';this.titKey='employ';break;
             case '/contact':this.curKey='contact';this.titKey='contact';break;

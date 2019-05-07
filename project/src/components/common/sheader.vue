@@ -46,7 +46,7 @@
           {value: '项目成果', addres: 'projectResult'},
           {value: '产品展示', addres: 'resultShow'},
           {value: '解决方案', addres: 'solution'},
-          {value: '技术支持', addres: 'solution'},
+          {value: '技术支持', addres: 'technicalSupport'},
 
         ],
 
@@ -72,7 +72,9 @@
           case '/teamStyle':
           case '/businessArea':
           case '/projectResult':
+          case '/productShow':
           case '/solution':
+          case '/technicalSupport':
           case '/employ':
           case '/contact':
             document.querySelector('#searchBar').style.background = '#00000036';

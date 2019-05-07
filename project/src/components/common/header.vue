@@ -30,7 +30,9 @@
                   break;
           case '/businessArea':
           case '/projectResult':
+          case '/productShow':
           case '/solution':
+          case '/technicalSupport':
                   this.back=require("../../assets/images/comHeader/bg22.jpg");
                   break;
           case '/employ':

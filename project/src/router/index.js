@@ -75,9 +75,14 @@ export default new Router({
             },
            {
               path: '/solution',
-              name:"teamStyle",
+              name:"solution",
               component: resolve => require(['@/components/solution'], resolve),
             },
+           {
+             path: '/technicalSupport',
+             name:"technicalSupport",
+             component: resolve => require(['@/components/technicalSupport'], resolve),
+           },
             {
               path: '/employ',
               name:"employ",
@@ -85,6 +90,7 @@ export default new Router({
            },
            {
              path: '/contact',
+             name: '/contact',
              component: resolve => require(['@/components/contact'], resolve),
 
            },
